@@ -1,0 +1,18 @@
+# This file was created Mon Sep 13 11:11:25 2021
+# Created by:
+#                     :-) GROMACS - gmx distance, 2018.2 (-:
+# 
+# Executable:   /sw/software/GROMACS/2018.2-foss-2018b/bin/gmx
+# Data prefix:  /sw/software/GROMACS/2018.2-foss-2018b
+# Working dir:  /media/beegfs/home/t731/t731630/ANDRES/hnRNPA1/PMFs/npt_shawn
+# Command line:
+#   gmx distance -n index.ndx -s npt20.gro -select 'com of group "ChainD" plus com of group "ChainB"' -oall distance20
+# gmx distance is part of G R O M A C S:
+#
+# Gnomes, ROck Monsters And Chili Sauce
+#
+@    title "Distance"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Distance (nm)"
+@TYPE xy
+      0.000    1.489
