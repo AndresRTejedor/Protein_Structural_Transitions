@@ -1,0 +1,1330 @@
+# Multiprotein complexes
+units       real
+dimension   3
+boundary    p p p
+atom_style  full
+
+bond_style  harmonic
+angle_style harmonic
+dielectric  80.0
+
+pair_style hybrid/overlay  ljlambda 0.1 0.0 35.0 lj/cut 10.0
+read_data  hnRNPA1LCD_NVT380.lmp
+bond_coeff          1     2.39      3.81 
+bond_coeff          2     2.39      5.00 
+angle_coeff         1     0.0001      180
+angle_coeff         2     5          180
+
+
+
+# pairwise coefficients
+#                  type1  type2 epsilon sigma  lambda  lj_cut  coulm_cut
+pair_coeff   *   * ljlambda   0.000   0.000  0.0000  0.000  0.000
+pair_coeff  1   1  ljlambda 0.200000  6.180  0.837838  18.540  0.000
+pair_coeff  1   2  ljlambda 0.200000  5.340  0.743243  16.020  0.000
+pair_coeff  1   3  ljlambda 0.200000  6.270  0.675676  18.810  0.000
+pair_coeff  1   4  ljlambda 0.200000  5.900  0.756757  17.700  0.000
+pair_coeff  1   5  ljlambda 0.200000  6.370  0.418919  19.110  0.000
+pair_coeff  1   6  ljlambda 0.200000  5.610  0.783784  16.830  0.000
+pair_coeff  1   7  ljlambda 0.200000  5.880  0.608108  17.640  0.000
+pair_coeff  1   8  ljlambda 0.200000  6.050  0.648649  18.150  0.000
+pair_coeff  1   9  ljlambda 0.200000  6.320  0.851351  18.960  0.000
+pair_coeff  1   10 ljlambda 0.200000  6.020  0.864865  18.060  0.000
+pair_coeff  1   11 ljlambda 0.200000  6.180  0.905406  18.540  0.000
+pair_coeff  1   12 ljlambda 0.200000  6.100  0.675676  18.300  0.000
+pair_coeff  1   13 ljlambda 0.200000  6.480  0.891892  19.440  0.000
+pair_coeff  1   14 ljlambda 0.200000  6.270  0.918919  18.810  0.000
+pair_coeff  1   15 ljlambda 0.200000  5.680  0.716217  17.040  0.000
+pair_coeff  1   16 ljlambda 0.200000  6.130  0.675676  18.390  0.000
+pair_coeff  1   17 ljlambda 0.200000  5.930  0.635135  17.790  0.000
+pair_coeff  1   18 ljlambda 0.200000  5.870  0.918919  17.610  0.000
+pair_coeff  1   19 ljlambda 0.200000  5.830  0.716217  17.490  0.000
+pair_coeff  1   20 ljlambda 0.200000  6.180  0.905406  18.540  0.000
+pair_coeff  1   21 ljlambda 0.200000  6.180  0.586487  18.540  0.000
+pair_coeff  1   22 ljlambda 0.200000  5.340  0.52027   16.020  0.000
+pair_coeff  1   23 ljlambda 0.200000  6.270  0.472973  18.810  0.000
+pair_coeff  1   24 ljlambda 0.200000  5.900  0.52973   17.700  0.000
+pair_coeff  1   25 ljlambda 0.200000  6.370  0.293243  19.110  0.000
+pair_coeff  1   26 ljlambda 0.200000  5.610  0.548649  16.830  0.000
+pair_coeff  1   27 ljlambda 0.200000  5.880  0.425676  17.640  0.000
+pair_coeff  1   28 ljlambda 0.200000  6.050  0.454054  18.150  0.000
+pair_coeff  1   29 ljlambda 0.200000  6.320  0.595946  18.960  0.000
+pair_coeff  1   30 ljlambda 0.200000  6.020  0.605405  18.060  0.000
+pair_coeff  1   31 ljlambda 0.200000  6.180  0.633784  18.540  0.000
+pair_coeff  1   32 ljlambda 0.200000  6.100  0.472973  18.300  0.000
+pair_coeff  1   33 ljlambda 0.200000  6.480  0.624324  19.440  0.000
+pair_coeff  1   34 ljlambda 0.200000  6.270  0.643243  18.810  0.000
+pair_coeff  1   35 ljlambda 0.200000  5.680  0.501352  17.040  0.000
+pair_coeff  1   36 ljlambda 0.200000  6.130  0.472973  18.390  0.000
+pair_coeff  1   37 ljlambda 0.200000  5.930  0.444594  17.790  0.000
+pair_coeff  1   38 ljlambda 0.200000  5.870  0.643243  17.610  0.000
+pair_coeff  1   39 ljlambda 0.200000  5.830  0.501352  17.490  0.000
+pair_coeff  1   40 ljlambda 0.200000  6.180  0.633784  18.540  0.000
+pair_coeff  2   2  ljlambda 0.200000  4.500  0.648649  13.500  0.000
+pair_coeff  2   3  ljlambda 0.200000  5.430  0.581082  16.290  0.000
+pair_coeff  2   4  ljlambda 0.200000  5.060  0.662162  15.180  0.000
+pair_coeff  2   5  ljlambda 0.200000  5.530  0.324324  16.590  0.000
+pair_coeff  2   6  ljlambda 0.200000  4.770  0.689189  14.310  0.000
+pair_coeff  2   7  ljlambda 0.200000  5.040  0.513514  15.120  0.000
+pair_coeff  2   8  ljlambda 0.200000  5.210  0.554054  15.630  0.000
+pair_coeff  2   9  ljlambda 0.200000  5.480  0.756757  16.440  0.000
+pair_coeff  2   10 ljlambda 0.200000  5.180  0.770270  15.540  0.000
+pair_coeff  2   11 ljlambda 0.200000  5.340  0.810811  16.020  0.000
+pair_coeff  2   12 ljlambda 0.200000  5.260  0.581082  15.780  0.000
+pair_coeff  2   13 ljlambda 0.200000  5.640  0.797297  16.920  0.000
+pair_coeff  2   14 ljlambda 0.200000  5.430  0.824324  16.290  0.000
+pair_coeff  2   15 ljlambda 0.200000  4.840  0.621622  14.520  0.000
+pair_coeff  2   16 ljlambda 0.200000  5.290  0.581082  15.870  0.000
+pair_coeff  2   17 ljlambda 0.200000  5.090  0.540540  15.270  0.000
+pair_coeff  2   18 ljlambda 0.200000  5.030  0.824324  15.090  0.000
+pair_coeff  2   19 ljlambda 0.200000  4.990  0.621622  14.970  0.000
+pair_coeff  2   20 ljlambda 0.200000  5.340  0.810811  16.020  0.000
+pair_coeff  2   21 ljlambda 0.200000  5.340  0.52027   16.020  0.000
+pair_coeff  2   22 ljlambda 0.200000  4.500  0.454054  13.500  0.000
+pair_coeff  2   23 ljlambda 0.200000  5.430  0.406757  16.290  0.000
+pair_coeff  2   24 ljlambda 0.200000  5.060  0.463513  15.180  0.000
+pair_coeff  2   25 ljlambda 0.200000  5.530  0.227027  16.590  0.000
+pair_coeff  2   26 ljlambda 0.200000  4.770  0.482432  14.310  0.000
+pair_coeff  2   27 ljlambda 0.200000  5.040  0.35946   15.120  0.000
+pair_coeff  2   28 ljlambda 0.200000  5.210  0.387838  15.630  0.000
+pair_coeff  2   29 ljlambda 0.200000  5.480  0.52973   16.440  0.000
+pair_coeff  2   30 ljlambda 0.200000  5.180  0.539189  15.540  0.000
+pair_coeff  2   31 ljlambda 0.200000  5.340  0.567568  16.020  0.000
+pair_coeff  2   32 ljlambda 0.200000  5.260  0.406757  15.780  0.000
+pair_coeff  2   33 ljlambda 0.200000  5.640  0.558108  16.920  0.000
+pair_coeff  2   34 ljlambda 0.200000  5.430  0.577027  16.290  0.000
+pair_coeff  2   35 ljlambda 0.200000  4.840  0.435135  14.520  0.000
+pair_coeff  2   36 ljlambda 0.200000  5.290  0.406757  15.870  0.000
+pair_coeff  2   37 ljlambda 0.200000  5.090  0.378378  15.270  0.000
+pair_coeff  2   38 ljlambda 0.200000  5.030  0.577027  15.090  0.000
+pair_coeff  2   39 ljlambda 0.200000  4.990  0.435135  14.970  0.000
+pair_coeff  2   40 ljlambda 0.200000  5.340  0.567568  16.020  0.000
+pair_coeff  3   3  ljlambda 0.200000  6.360  0.513514  19.080  35.000
+pair_coeff  3   4  ljlambda 0.200000  5.990  0.594595  17.970  0.000
+pair_coeff  3   5  ljlambda 0.200000  6.460  0.256757  19.380  35.000
+pair_coeff  3   6  ljlambda 0.200000  5.700  0.621622  17.100  0.000
+pair_coeff  3   7  ljlambda 0.200000  5.970  0.445946  17.910  35.000
+pair_coeff  3   8  ljlambda 0.200000  6.140  0.486486  18.420  35.000
+pair_coeff  3   9  ljlambda 0.200000  6.410  0.689189  19.230  0.000
+pair_coeff  3   10 ljlambda 0.200000  6.110  0.702703  18.330  0.000
+pair_coeff  3   11 ljlambda 0.200000  6.270  0.743243  18.810  0.000
+pair_coeff  3   12 ljlambda 0.200000  6.190  0.513514  18.570  0.000
+pair_coeff  3   13 ljlambda 0.200000  6.570  0.729730  19.710  0.000
+pair_coeff  3   14 ljlambda 0.200000  6.360  0.756757  19.080  0.000
+pair_coeff  3   15 ljlambda 0.200000  5.770  0.554054  17.310  0.000
+pair_coeff  3   16 ljlambda 0.200000  6.220  0.513514  18.660  35.000
+pair_coeff  3   17 ljlambda 0.200000  6.020  0.472973  18.060  0.000
+pair_coeff  3   18 ljlambda 0.200000  5.960  0.756757  17.880  0.000
+pair_coeff  3   19 ljlambda 0.200000  5.920  0.554054  17.760  0.000
+pair_coeff  3   20 ljlambda 0.200000  6.270  0.743243  18.810  0.000
+pair_coeff  3   21 ljlambda 0.200000  6.270  0.472973  18.810  0.000
+pair_coeff  3   22 ljlambda 0.200000  5.430  0.406757  16.290  0.000
+pair_coeff  3   23 ljlambda 0.200000  6.360  0.35946   19.080  35.000
+pair_coeff  3   24 ljlambda 0.200000  5.990  0.416216  17.970  0.000
+pair_coeff  3   25 ljlambda 0.200000  6.460  0.17973   19.380  35.000
+pair_coeff  3   26 ljlambda 0.200000  5.700  0.435135  17.100  0.000
+pair_coeff  3   27 ljlambda 0.200000  5.970  0.312162  17.910  35.000
+pair_coeff  3   28 ljlambda 0.200000  6.140  0.34054   18.420  35.000
+pair_coeff  3   29 ljlambda 0.200000  6.410  0.482432  19.230  0.000
+pair_coeff  3   30 ljlambda 0.200000  6.110  0.491892  18.330  0.000
+pair_coeff  3   31 ljlambda 0.200000  6.270  0.52027   18.810  0.000
+pair_coeff  3   32 ljlambda 0.200000  6.190  0.35946   18.570  0.000
+pair_coeff  3   33 ljlambda 0.200000  6.570  0.510811  19.710  0.000
+pair_coeff  3   34 ljlambda 0.200000  6.360  0.52973   19.080  0.000
+pair_coeff  3   35 ljlambda 0.200000  5.770  0.387838  17.310  0.000
+pair_coeff  3   36 ljlambda 0.200000  6.220  0.35946   18.660  35.000
+pair_coeff  3   37 ljlambda 0.200000  6.020  0.331081  18.060  0.000
+pair_coeff  3   38 ljlambda 0.200000  5.960  0.52973   17.880  0.000
+pair_coeff  3   39 ljlambda 0.200000  5.920  0.387838  17.760  0.000
+pair_coeff  3   40 ljlambda 0.200000  6.270  0.52027   18.810  0.000
+pair_coeff  4   4  ljlambda 0.200000  5.620  0.675676  16.860  0.000
+pair_coeff  4   5  ljlambda 0.200000  6.090  0.337838  18.270  0.000
+pair_coeff  4   6  ljlambda 0.200000  5.330  0.702703  15.990  0.000
+pair_coeff  4   7  ljlambda 0.200000  5.600  0.527027  16.800  0.000
+pair_coeff  4   8  ljlambda 0.200000  5.770  0.567567  17.310  0.000
+pair_coeff  4   9  ljlambda 0.200000  6.040  0.770270  18.120  0.000
+pair_coeff  4   10 ljlambda 0.200000  5.740  0.783784  17.220  0.000
+pair_coeff  4   11 ljlambda 0.200000  5.900  0.824324  17.700  0.000
+pair_coeff  4   12 ljlambda 0.200000  5.820  0.594595  17.460  0.000
+pair_coeff  4   13 ljlambda 0.200000  6.200  0.810811  18.600  0.000
+pair_coeff  4   14 ljlambda 0.200000  5.990  0.837838  17.970  0.000
+pair_coeff  4   15 ljlambda 0.200000  5.400  0.635136  16.200  0.000
+pair_coeff  4   16 ljlambda 0.200000  5.850  0.594595  17.550  0.000
+pair_coeff  4   17 ljlambda 0.200000  5.650  0.554054  16.950  0.000
+pair_coeff  4   18 ljlambda 0.200000  5.590  0.837838  16.770  0.000
+pair_coeff  4   19 ljlambda 0.200000  5.550  0.635136  16.650  0.000
+pair_coeff  4   20 ljlambda 0.200000  5.900  0.824324  17.700  0.000
+pair_coeff  4   21 ljlambda 0.200000  5.900  0.52973   17.700  0.000
+pair_coeff  4   22 ljlambda 0.200000  5.060  0.463513  15.180  0.000
+pair_coeff  4   23 ljlambda 0.200000  5.990  0.416216  17.970  0.000
+pair_coeff  4   24 ljlambda 0.200000  5.620  0.472973  16.860  0.000
+pair_coeff  4   25 ljlambda 0.200000  6.090  0.236487  18.270  0.000
+pair_coeff  4   26 ljlambda 0.200000  5.330  0.491892  15.990  0.000
+pair_coeff  4   27 ljlambda 0.200000  5.600  0.368919  16.800  0.000
+pair_coeff  4   28 ljlambda 0.200000  5.770  0.397297  17.310  0.000
+pair_coeff  4   29 ljlambda 0.200000  6.040  0.539189  18.120  0.000
+pair_coeff  4   30 ljlambda 0.200000  5.740  0.548649  17.220  0.000
+pair_coeff  4   31 ljlambda 0.200000  5.900  0.577027  17.700  0.000
+pair_coeff  4   32 ljlambda 0.200000  5.820  0.416216  17.460  0.000
+pair_coeff  4   33 ljlambda 0.200000  6.200  0.567568  18.600  0.000
+pair_coeff  4   34 ljlambda 0.200000  5.990  0.586487  17.970  0.000
+pair_coeff  4   35 ljlambda 0.200000  5.400  0.444595  16.200  0.000
+pair_coeff  4   36 ljlambda 0.200000  5.850  0.416216  17.550  0.000
+pair_coeff  4   37 ljlambda 0.200000  5.650  0.387838  16.950  0.000
+pair_coeff  4   38 ljlambda 0.200000  5.590  0.586487  16.770  0.000
+pair_coeff  4   39 ljlambda 0.200000  5.550  0.444595  16.650  0.000
+pair_coeff  4   40 ljlambda 0.200000  5.900  0.577027  17.700  0.000
+pair_coeff  5   5  ljlambda 0.200000  6.560  0.000000  7.363   35.000
+pair_coeff  5   6  ljlambda 0.200000  5.800  0.364865  17.400  0.000
+pair_coeff  5   7  ljlambda 0.200000  6.070  0.189189  18.210  35.000
+pair_coeff  5   8  ljlambda 0.200000  6.240  0.229730  18.720  35.000
+pair_coeff  5   9  ljlambda 0.200000  6.510  0.432433  19.530  0.000
+pair_coeff  5   10 ljlambda 0.200000  6.210  0.445946  18.630  0.000
+pair_coeff  5   11 ljlambda 0.200000  6.370  0.486486  19.110  0.000
+pair_coeff  5   12 ljlambda 0.200000  6.290  0.256757  18.870  0.000
+pair_coeff  5   13 ljlambda 0.200000  6.670  0.472973  20.010  0.000
+pair_coeff  5   14 ljlambda 0.200000  6.460  0.500000  19.380  0.000
+pair_coeff  5   15 ljlambda 0.200000  5.870  0.297298  17.610  0.000
+pair_coeff  5   16 ljlambda 0.200000  6.320  0.256757  18.960  35.000
+pair_coeff  5   17 ljlambda 0.200000  6.120  0.216216  18.360  0.000
+pair_coeff  5   18 ljlambda 0.200000  6.060  0.500000  18.180  0.000
+pair_coeff  5   19 ljlambda 0.200000  6.020  0.297298  18.060  0.000
+pair_coeff  5   20 ljlambda 0.200000  6.370  0.486486  19.110  0.000
+pair_coeff  5   21 ljlambda 0.200000  6.370  0.293243  19.110  0.000
+pair_coeff  5   22 ljlambda 0.200000  5.530  0.227027  16.590  0.000
+pair_coeff  5   23 ljlambda 0.200000  6.460  0.17973   19.380  35.000
+pair_coeff  5   24 ljlambda 0.200000  6.090  0.236487  18.270  0.000
+pair_coeff  5   25 ljlambda 0.200000  6.560  0         7.363   35.000
+pair_coeff  5   26 ljlambda 0.200000  5.800  0.255406  17.400  0.000
+pair_coeff  5   27 ljlambda 0.200000  6.070  0.132432  18.210  35.000
+pair_coeff  5   28 ljlambda 0.200000  6.240  0.16079   18.720  35.000
+pair_coeff  5   29 ljlambda 0.200000  6.510  0.302703  19.530  0.000
+pair_coeff  5   30 ljlambda 0.200000  6.210  0.312162  18.630  0.000
+pair_coeff  5   31 ljlambda 0.200000  6.370  0.34054   19.110  0.000
+pair_coeff  5   32 ljlambda 0.200000  6.290  0.17973   18.870  0.000
+pair_coeff  5   33 ljlambda 0.200000  6.670  0.331081  20.010  0.000
+pair_coeff  5   34 ljlambda 0.200000  6.460  0.35      19.380  0.000
+pair_coeff  5   35 ljlambda 0.200000  5.870  0.208109  17.610  0.000
+pair_coeff  5   36 ljlambda 0.200000  6.320  0.17973   18.960  35.000
+pair_coeff  5   37 ljlambda 0.200000  6.120  0.151351  18.360  0.000
+pair_coeff  5   38 ljlambda 0.200000  6.060  0.35      18.180  0.000
+pair_coeff  5   39 ljlambda 0.200000  6.020  0.208109  18.060  0.000
+pair_coeff  5   40 ljlambda 0.200000  6.370  0.34054   19.110  0.000
+pair_coeff  6   6  ljlambda 0.200000  5.040  0.729730  15.120  0.000
+pair_coeff  6   7  ljlambda 0.200000  5.310  0.554054  15.930  0.000
+pair_coeff  6   8  ljlambda 0.200000  5.480  0.594594  16.440  0.000
+pair_coeff  6   9  ljlambda 0.200000  5.750  0.797297  17.250  0.000
+pair_coeff  6   10 ljlambda 0.200000  5.450  0.810811  16.350  0.000
+pair_coeff  6   11 ljlambda 0.200000  5.610  0.851351  16.830  0.000
+pair_coeff  6   12 ljlambda 0.200000  5.530  0.621622  16.590  0.000
+pair_coeff  6   13 ljlambda 0.200000  5.910  0.837838  17.730  0.000
+pair_coeff  6   14 ljlambda 0.200000  5.700  0.864865  17.100  0.000
+pair_coeff  6   15 ljlambda 0.200000  5.110  0.662163  15.330  0.000
+pair_coeff  6   16 ljlambda 0.200000  5.560  0.621622  16.680  0.000
+pair_coeff  6   17 ljlambda 0.200000  5.360  0.581081  16.080  0.000
+pair_coeff  6   18 ljlambda 0.200000  5.300  0.864865  15.900  0.000
+pair_coeff  6   19 ljlambda 0.200000  5.260  0.662163  15.780  0.000
+pair_coeff  6   20 ljlambda 0.200000  5.610  0.851351  16.830  0.000
+pair_coeff  6   21 ljlambda 0.200000  5.610  0.548649  16.830  0.000
+pair_coeff  6   22 ljlambda 0.200000  4.770  0.482432  14.310  0.000
+pair_coeff  6   23 ljlambda 0.200000  5.700  0.435135  17.100  0.000
+pair_coeff  6   24 ljlambda 0.200000  5.330  0.491892  15.990  0.000
+pair_coeff  6   25 ljlambda 0.200000  5.800  0.255406  17.400  0.000
+pair_coeff  6   26 ljlambda 0.200000  5.040  0.510811  15.120  0.000
+pair_coeff  6   27 ljlambda 0.200000  5.310  0.387838  15.930  0.000
+pair_coeff  6   28 ljlambda 0.200000  5.480  0.416216  16.440  0.000
+pair_coeff  6   29 ljlambda 0.200000  5.750  0.558108  17.250  0.000
+pair_coeff  6   30 ljlambda 0.200000  5.450  0.567568  16.350  0.000
+pair_coeff  6   31 ljlambda 0.200000  5.610  0.595946  16.830  0.000
+pair_coeff  6   32 ljlambda 0.200000  5.530  0.435135  16.590  0.000
+pair_coeff  6   33 ljlambda 0.200000  5.910  0.586487  17.730  0.000
+pair_coeff  6   34 ljlambda 0.200000  5.700  0.605405  17.100  0.000
+pair_coeff  6   35 ljlambda 0.200000  5.110  0.463514  15.330  0.000
+pair_coeff  6   36 ljlambda 0.200000  5.560  0.435135  16.680  0.000
+pair_coeff  6   37 ljlambda 0.200000  5.360  0.406757  16.080  0.000
+pair_coeff  6   38 ljlambda 0.200000  5.300  0.605405  15.900  0.000
+pair_coeff  6   39 ljlambda 0.200000  5.260  0.463514  15.780  0.000
+pair_coeff  6   40 ljlambda 0.200000  5.610  0.595946  16.830  0.000
+pair_coeff  7   7  ljlambda 0.200000  5.580  0.378378  16.740  35.000
+pair_coeff  7   8  ljlambda 0.200000  5.750  0.418918  17.250  35.000
+pair_coeff  7   9  ljlambda 0.200000  6.020  0.621621  18.060  0.000
+pair_coeff  7   10 ljlambda 0.200000  5.720  0.635135  17.160  0.000
+pair_coeff  7   11 ljlambda 0.200000  5.880  0.675676  17.640  0.000
+pair_coeff  7   12 ljlambda 0.200000  5.800  0.445946  17.400  0.000
+pair_coeff  7   13 ljlambda 0.200000  6.180  0.662162  18.540  0.000
+pair_coeff  7   14 ljlambda 0.200000  5.970  0.689189  17.910  0.000
+pair_coeff  7   15 ljlambda 0.200000  5.380  0.486486  16.140  0.000
+pair_coeff  7   16 ljlambda 0.200000  5.830  0.445946  17.490  35.000
+pair_coeff  7   17 ljlambda 0.200000  5.630  0.405405  16.890  0.000
+pair_coeff  7   18 ljlambda 0.200000  5.570  0.689189  16.710  0.000
+pair_coeff  7   19 ljlambda 0.200000  5.530  0.486486  16.590  0.000
+pair_coeff  7   20 ljlambda 0.200000  5.880  0.675676  17.640  0.000
+pair_coeff  7   21 ljlambda 0.200000  5.880  0.425676  17.640  0.000
+pair_coeff  7   22 ljlambda 0.200000  5.040  0.35946   15.120  0.000
+pair_coeff  7   23 ljlambda 0.200000  5.970  0.312162  17.910  35.000
+pair_coeff  7   24 ljlambda 0.200000  5.600  0.368919  16.800  0.000
+pair_coeff  7   25 ljlambda 0.200000  6.070  0.132432  18.210  35.000
+pair_coeff  7   26 ljlambda 0.200000  5.310  0.387838  15.930  0.000
+pair_coeff  7   27 ljlambda 0.200000  5.580  0.264865  16.740  35.000
+pair_coeff  7   28 ljlambda 0.200000  5.750  0.293243  17.250  35.000
+pair_coeff  7   29 ljlambda 0.200000  6.020  0.435135  18.060  0.000
+pair_coeff  7   30 ljlambda 0.200000  5.720  0.444594  17.160  0.000
+pair_coeff  7   31 ljlambda 0.200000  5.880  0.472973  17.640  0.000
+pair_coeff  7   32 ljlambda 0.200000  5.800  0.312162  17.400  0.000
+pair_coeff  7   33 ljlambda 0.200000  6.180  0.463513  18.540  0.000
+pair_coeff  7   34 ljlambda 0.200000  5.970  0.482432  17.910  0.000
+pair_coeff  7   35 ljlambda 0.200000  5.380  0.34054   16.140  0.000
+pair_coeff  7   36 ljlambda 0.200000  5.830  0.312162  17.490  35.000
+pair_coeff  7   37 ljlambda 0.200000  5.630  0.283783  16.890  0.000
+pair_coeff  7   38 ljlambda 0.200000  5.570  0.482432  16.710  0.000
+pair_coeff  7   39 ljlambda 0.200000  5.530  0.34054   16.590  0.000
+pair_coeff  7   40 ljlambda 0.200000  5.880  0.472973  17.640  0.000
+pair_coeff  8   8  ljlambda 0.200000  5.920  0.459459  17.760  35.000
+pair_coeff  8   9  ljlambda 0.200000  6.190  0.662162  18.570  0.000
+pair_coeff  8   10 ljlambda 0.200000  5.890  0.675676  17.670  0.000
+pair_coeff  8   11 ljlambda 0.200000  6.050  0.716216  18.150  0.000
+pair_coeff  8   12 ljlambda 0.200000  5.970  0.486486  17.910  0.000
+pair_coeff  8   13 ljlambda 0.200000  6.350  0.702703  19.050  0.000
+pair_coeff  8   14 ljlambda 0.200000  6.140  0.729730  18.420  0.000
+pair_coeff  8   15 ljlambda 0.200000  5.550  0.527027  16.650  0.000
+pair_coeff  8   16 ljlambda 0.200000  6.000  0.486486  18.000  35.000
+pair_coeff  8   17 ljlambda 0.200000  5.800  0.445946  17.400  0.000
+pair_coeff  8   18 ljlambda 0.200000  5.740  0.729730  17.220  0.000
+pair_coeff  8   19 ljlambda 0.200000  5.700  0.527027  17.100  0.000
+pair_coeff  8   20 ljlambda 0.200000  6.050  0.716216  18.150  0.000
+pair_coeff  8   21 ljlambda 0.200000  6.050  0.454054  18.150  0.000
+pair_coeff  8   22 ljlambda 0.200000  5.210  0.387838  15.630  0.000
+pair_coeff  8   23 ljlambda 0.200000  6.140  0.34054   18.420  35.000
+pair_coeff  8   24 ljlambda 0.200000  5.770  0.397297  17.310  0.000
+pair_coeff  8   25 ljlambda 0.200000  6.240  0.17689   18.720  35.000
+pair_coeff  8   26 ljlambda 0.200000  5.480  0.416216  16.440  0.000
+pair_coeff  8   27 ljlambda 0.200000  5.750  0.293243  17.250  35.000
+pair_coeff  8   28 ljlambda 0.200000  5.920  0.321621  17.760  35.000
+pair_coeff  8   29 ljlambda 0.200000  6.190  0.463513  18.570  0.000
+pair_coeff  8   30 ljlambda 0.200000  5.890  0.472973  17.670  0.000
+pair_coeff  8   31 ljlambda 0.200000  6.050  0.501351  18.150  0.000
+pair_coeff  8   32 ljlambda 0.200000  5.970  0.34054   17.910  0.000
+pair_coeff  8   33 ljlambda 0.200000  6.350  0.491892  19.050  0.000
+pair_coeff  8   34 ljlambda 0.200000  6.140  0.510811  18.420  0.000
+pair_coeff  8   35 ljlambda 0.200000  5.550  0.368919  16.650  0.000
+pair_coeff  8   36 ljlambda 0.200000  6.000  0.34054   18.000  35.000
+pair_coeff  8   37 ljlambda 0.200000  5.800  0.312162  17.400  0.000
+pair_coeff  8   38 ljlambda 0.200000  5.740  0.510811  17.220  0.000
+pair_coeff  8   39 ljlambda 0.200000  5.700  0.368919  17.100  0.000
+pair_coeff  8   40 ljlambda 0.200000  6.050  0.501351  18.150  0.000
+pair_coeff  9   9  ljlambda 0.200000  6.460  0.864865  19.380  0.000
+pair_coeff  9   10 ljlambda 0.200000  6.160  0.878379  18.480  0.000
+pair_coeff  9   11 ljlambda 0.200000  6.320  0.918919  18.960  0.000
+pair_coeff  9   12 ljlambda 0.200000  6.240  0.689189  18.720  0.000
+pair_coeff  9   13 ljlambda 0.200000  6.620  0.905406  19.860  0.000
+pair_coeff  9   14 ljlambda 0.200000  6.410  0.932433  19.230  0.000
+pair_coeff  9   15 ljlambda 0.200000  5.820  0.729730  17.460  0.000
+pair_coeff  9   16 ljlambda 0.200000  6.270  0.689189  18.810  0.000
+pair_coeff  9   17 ljlambda 0.200000  6.070  0.648649  18.210  0.000
+pair_coeff  9   18 ljlambda 0.200000  6.010  0.932433  18.030  0.000
+pair_coeff  9   19 ljlambda 0.200000  5.970  0.729730  17.910  0.000
+pair_coeff  9   20 ljlambda 0.200000  6.320  0.918919  18.960  0.000
+pair_coeff  9   21 ljlambda 0.200000  6.320  0.595946  18.960  0.000
+pair_coeff  9   22 ljlambda 0.200000  5.480  0.52973   16.440  0.000
+pair_coeff  9   23 ljlambda 0.200000  6.410  0.482432  19.230  0.000
+pair_coeff  9   24 ljlambda 0.200000  6.040  0.539189  18.120  0.000
+pair_coeff  9   25 ljlambda 0.200000  6.510  0.302703  19.530  0.000
+pair_coeff  9   26 ljlambda 0.200000  5.750  0.558108  17.250  0.000
+pair_coeff  9   27 ljlambda 0.200000  6.020  0.435135  18.060  0.000
+pair_coeff  9   28 ljlambda 0.200000  6.190  0.463513  18.570  0.000
+pair_coeff  9   29 ljlambda 0.200000  6.460  0.605405  19.380  0.000
+pair_coeff  9   30 ljlambda 0.200000  6.160  0.614865  18.480  0.000
+pair_coeff  9   31 ljlambda 0.200000  6.320  0.643243  18.960  0.000
+pair_coeff  9   32 ljlambda 0.200000  6.240  0.482432  18.720  0.000
+pair_coeff  9   33 ljlambda 0.200000  6.620  0.633784  19.860  0.000
+pair_coeff  9   34 ljlambda 0.200000  6.410  0.652703  19.230  0.000
+pair_coeff  9   35 ljlambda 0.200000  5.820  0.510811  17.460  0.000
+pair_coeff  9   36 ljlambda 0.200000  6.270  0.482432  18.810  0.000
+pair_coeff  9   37 ljlambda 0.200000  6.070  0.454054  18.210  0.000
+pair_coeff  9   38 ljlambda 0.200000  6.010  0.652703  18.030  0.000
+pair_coeff  9   39 ljlambda 0.200000  5.970  0.510811  17.910  0.000
+pair_coeff  9   40 ljlambda 0.200000  6.320  0.643243  18.960  0.000
+pair_coeff  10  10 ljlambda 0.200000  5.860  0.891892  17.580  0.000
+pair_coeff  10  11 ljlambda 0.200000  6.020  0.932433  18.060  0.000
+pair_coeff  10  12 ljlambda 0.200000  5.940  0.702703  17.820  0.000
+pair_coeff  10  13 ljlambda 0.200000  6.320  0.918919  18.960  0.000
+pair_coeff  10  14 ljlambda 0.200000  6.110  0.945946  18.330  0.000
+pair_coeff  10  15 ljlambda 0.200000  5.520  0.743244  16.560  0.000
+pair_coeff  10  16 ljlambda 0.200000  5.970  0.702703  17.910  0.000
+pair_coeff  10  17 ljlambda 0.200000  5.770  0.662162  17.310  0.000
+pair_coeff  10  18 ljlambda 0.200000  5.710  0.945946  17.130  0.000
+pair_coeff  10  19 ljlambda 0.200000  5.670  0.743244  17.010  0.000
+pair_coeff  10  20 ljlambda 0.200000  6.020  0.932433  18.060  0.000
+pair_coeff  10  21 ljlambda 0.200000  6.020  0.605405  18.060  0.000
+pair_coeff  10  22 ljlambda 0.200000  5.180  0.539189  15.540  0.000
+pair_coeff  10  23 ljlambda 0.200000  6.110  0.491892  18.330  0.000
+pair_coeff  10  24 ljlambda 0.200000  5.740  0.548649  17.220  0.000
+pair_coeff  10  25 ljlambda 0.200000  6.210  0.312162  18.630  0.000
+pair_coeff  10  26 ljlambda 0.200000  5.450  0.567568  16.350  0.000
+pair_coeff  10  27 ljlambda 0.200000  5.720  0.444594  17.160  0.000
+pair_coeff  10  28 ljlambda 0.200000  5.890  0.472973  17.670  0.000
+pair_coeff  10  29 ljlambda 0.200000  6.160  0.614865  18.480  0.000
+pair_coeff  10  30 ljlambda 0.200000  5.860  0.624324  17.580  0.000
+pair_coeff  10  31 ljlambda 0.200000  6.020  0.652703  18.060  0.000
+pair_coeff  10  32 ljlambda 0.200000  5.940  0.491892  17.820  0.000
+pair_coeff  10  33 ljlambda 0.200000  6.320  0.643243  18.960  0.000
+pair_coeff  10  34 ljlambda 0.200000  6.110  0.662162  18.330  0.000
+pair_coeff  10  35 ljlambda 0.200000  5.520  0.520271  16.560  0.000
+pair_coeff  10  36 ljlambda 0.200000  5.970  0.491892  17.910  0.000
+pair_coeff  10  37 ljlambda 0.200000  5.770  0.463513  17.310  0.000
+pair_coeff  10  38 ljlambda 0.200000  5.710  0.662162  17.130  0.000
+pair_coeff  10  39 ljlambda 0.200000  5.670  0.520271  17.010  0.000
+pair_coeff  10  40 ljlambda 0.200000  6.020  0.652703  18.060  0.000
+pair_coeff  11  11 ljlambda 0.200000  6.180  0.972973  18.540  0.000
+pair_coeff  11  12 ljlambda 0.200000  6.100  0.743243  18.300  0.000
+pair_coeff  11  13 ljlambda 0.200000  6.480  0.959459  19.440  0.000
+pair_coeff  11  14 ljlambda 0.200000  6.270  0.986486  18.810  0.000
+pair_coeff  11  15 ljlambda 0.200000  5.680  0.783784  17.040  0.000
+pair_coeff  11  16 ljlambda 0.200000  6.130  0.743243  18.390  0.000
+pair_coeff  11  17 ljlambda 0.200000  5.930  0.702703  17.790  0.000
+pair_coeff  11  18 ljlambda 0.200000  5.870  0.986486  17.610  0.000
+pair_coeff  11  19 ljlambda 0.200000  5.830  0.783784  17.490  0.000
+pair_coeff  11  20 ljlambda 0.200000  6.180  0.972973  18.540  0.000
+pair_coeff  11  21 ljlambda 0.200000  6.180  0.633784  18.540  0.000
+pair_coeff  11  22 ljlambda 0.200000  5.340  0.567568  16.020  0.000
+pair_coeff  11  23 ljlambda 0.200000  6.270  0.52027   18.810  0.000
+pair_coeff  11  24 ljlambda 0.200000  5.900  0.577027  17.700  0.000
+pair_coeff  11  25 ljlambda 0.200000  6.370  0.34054   19.110  0.000
+pair_coeff  11  26 ljlambda 0.200000  5.610  0.595946  16.830  0.000
+pair_coeff  11  27 ljlambda 0.200000  5.880  0.472973  17.640  0.000
+pair_coeff  11  28 ljlambda 0.200000  6.050  0.501351  18.150  0.000
+pair_coeff  11  29 ljlambda 0.200000  6.320  0.643243  18.960  0.000
+pair_coeff  11  30 ljlambda 0.200000  6.020  0.652703  18.060  0.000
+pair_coeff  11  31 ljlambda 0.200000  6.180  0.681081  18.540  0.000
+pair_coeff  11  32 ljlambda 0.200000  6.100  0.52027   18.300  0.000
+pair_coeff  11  33 ljlambda 0.200000  6.480  0.671621  19.440  0.000
+pair_coeff  11  34 ljlambda 0.200000  6.270  0.69054   18.810  0.000
+pair_coeff  11  35 ljlambda 0.200000  5.680  0.548649  17.040  0.000
+pair_coeff  11  36 ljlambda 0.200000  6.130  0.52027   18.390  0.000
+pair_coeff  11  37 ljlambda 0.200000  5.930  0.491892  17.790  0.000
+pair_coeff  11  38 ljlambda 0.200000  5.870  0.69054   17.610  0.000
+pair_coeff  11  39 ljlambda 0.200000  5.830  0.548649  17.490  0.000
+pair_coeff  11  40 ljlambda 0.200000  6.180  0.681081  18.540  0.000
+pair_coeff  12  12 ljlambda 0.200000  6.020  0.513514  18.060  0.000
+pair_coeff  12  13 ljlambda 0.200000  6.400  0.729730  19.200  0.000
+pair_coeff  12  14 ljlambda 0.200000  6.190  0.756757  18.570  0.000
+pair_coeff  12  15 ljlambda 0.200000  5.600  0.554054  16.800  0.000
+pair_coeff  12  16 ljlambda 0.200000  6.050  0.513514  18.150  0.000
+pair_coeff  12  17 ljlambda 0.200000  5.850  0.472973  17.550  0.000
+pair_coeff  12  18 ljlambda 0.200000  5.790  0.756757  17.370  0.000
+pair_coeff  12  19 ljlambda 0.200000  5.750  0.554054  17.250  0.000
+pair_coeff  12  20 ljlambda 0.200000  6.100  0.743243  18.300  0.000
+pair_coeff  12  21 ljlambda 0.200000  6.100  0.472973  18.300  0.000
+pair_coeff  12  22 ljlambda 0.200000  5.260  0.406757  15.780  0.000
+pair_coeff  12  23 ljlambda 0.200000  6.190  0.35946   18.570  0.000
+pair_coeff  12  24 ljlambda 0.200000  5.820  0.416216  17.460  0.000
+pair_coeff  12  25 ljlambda 0.200000  6.290  0.17973   18.870  0.000
+pair_coeff  12  26 ljlambda 0.200000  5.530  0.435135  16.590  0.000
+pair_coeff  12  27 ljlambda 0.200000  5.800  0.312162  17.400  0.000
+pair_coeff  12  28 ljlambda 0.200000  5.970  0.34054   17.910  0.000
+pair_coeff  12  29 ljlambda 0.200000  6.240  0.482432  18.720  0.000
+pair_coeff  12  30 ljlambda 0.200000  5.940  0.491892  17.820  0.000
+pair_coeff  12  31 ljlambda 0.200000  6.100  0.52027   18.300  0.000
+pair_coeff  12  32 ljlambda 0.200000  6.020  0.35946   18.060  0.000
+pair_coeff  12  33 ljlambda 0.200000  6.400  0.510811  19.200  0.000
+pair_coeff  12  34 ljlambda 0.200000  6.190  0.52973   18.570  0.000
+pair_coeff  12  35 ljlambda 0.200000  5.600  0.387838  16.800  0.000
+pair_coeff  12  36 ljlambda 0.200000  6.050  0.35946   18.150  0.000
+pair_coeff  12  37 ljlambda 0.200000  5.850  0.331081  17.550  0.000
+pair_coeff  12  38 ljlambda 0.200000  5.790  0.52973   17.370  0.000
+pair_coeff  12  39 ljlambda 0.200000  5.750  0.387838  17.250  0.000
+pair_coeff  12  40 ljlambda 0.200000  6.100  0.52027   18.300  0.000
+pair_coeff  13  13 ljlambda 0.200000  6.780  0.945946  20.340  0.000
+pair_coeff  13  14 ljlambda 0.200000  6.570  0.972973  19.710  0.000
+pair_coeff  13  15 ljlambda 0.200000  5.980  0.770270  17.940  0.000
+pair_coeff  13  16 ljlambda 0.200000  6.430  0.729730  19.290  0.000
+pair_coeff  13  17 ljlambda 0.200000  6.230  0.689189  18.690  0.000
+pair_coeff  13  18 ljlambda 0.200000  6.170  0.972973  18.510  0.000
+pair_coeff  13  19 ljlambda 0.200000  6.130  0.770270  18.390  0.000
+pair_coeff  13  20 ljlambda 0.200000  6.480  0.959459  19.440  0.000
+pair_coeff  13  21 ljlambda 0.200000  6.480  0.624324  19.440  0.000
+pair_coeff  13  22 ljlambda 0.200000  5.640  0.558108  16.920  0.000
+pair_coeff  13  23 ljlambda 0.200000  6.570  0.510811  19.710  0.000
+pair_coeff  13  24 ljlambda 0.200000  6.200  0.567568  18.600  0.000
+pair_coeff  13  25 ljlambda 0.200000  6.670  0.331081  20.010  0.000
+pair_coeff  13  26 ljlambda 0.200000  5.910  0.586487  17.730  0.000
+pair_coeff  13  27 ljlambda 0.200000  6.180  0.463513  18.540  0.000
+pair_coeff  13  28 ljlambda 0.200000  6.350  0.491892  19.050  0.000
+pair_coeff  13  29 ljlambda 0.200000  6.620  0.633784  19.860  0.000
+pair_coeff  13  30 ljlambda 0.200000  6.320  0.643243  18.960  0.000
+pair_coeff  13  31 ljlambda 0.200000  6.480  0.671621  19.440  0.000
+pair_coeff  13  32 ljlambda 0.200000  6.400  0.510811  19.200  0.000
+pair_coeff  13  33 ljlambda 0.200000  6.780  0.662162  20.340  0.000
+pair_coeff  13  34 ljlambda 0.200000  6.570  0.681081  19.710  0.000
+pair_coeff  13  35 ljlambda 0.200000  5.980  0.539189  17.940  0.000
+pair_coeff  13  36 ljlambda 0.200000  6.430  0.510811  19.290  0.000
+pair_coeff  13  37 ljlambda 0.200000  6.230  0.482432  18.690  0.000
+pair_coeff  13  38 ljlambda 0.200000  6.170  0.681081  18.510  0.000
+pair_coeff  13  39 ljlambda 0.200000  6.130  0.539189  18.390  0.000
+pair_coeff  13  40 ljlambda 0.200000  6.480  0.671621  19.440  0.000
+pair_coeff  14  14 ljlambda 0.200000  6.360  1.000000  19.080  0.000
+pair_coeff  14  15 ljlambda 0.200000  5.770  0.797297  17.310  0.000
+pair_coeff  14  16 ljlambda 0.200000  6.220  0.756757  18.660  0.000
+pair_coeff  14  17 ljlambda 0.200000  6.020  0.716216  18.060  0.000
+pair_coeff  14  18 ljlambda 0.200000  5.960  1.000000  17.880  0.000
+pair_coeff  14  19 ljlambda 0.200000  5.920  0.797297  17.760  0.000
+pair_coeff  14  20 ljlambda 0.200000  6.270  0.986486  18.810  0.000
+pair_coeff  14  21 ljlambda 0.200000  6.270  0.643243  18.810  0.000
+pair_coeff  14  22 ljlambda 0.200000  5.430  0.577027  16.290  0.000
+pair_coeff  14  23 ljlambda 0.200000  6.360  0.52973   19.080  0.000
+pair_coeff  14  24 ljlambda 0.200000  5.990  0.586487  17.970  0.000
+pair_coeff  14  25 ljlambda 0.200000  6.460  0.35      19.380  0.000
+pair_coeff  14  26 ljlambda 0.200000  5.700  0.605405  17.100  0.000
+pair_coeff  14  27 ljlambda 0.200000  5.970  0.482432  17.910  0.000
+pair_coeff  14  28 ljlambda 0.200000  6.140  0.510811  18.420  0.000
+pair_coeff  14  29 ljlambda 0.200000  6.410  0.652703  19.230  0.000
+pair_coeff  14  30 ljlambda 0.200000  6.110  0.662162  18.330  0.000
+pair_coeff  14  31 ljlambda 0.200000  6.270  0.69054   18.810  0.000
+pair_coeff  14  32 ljlambda 0.200000  6.190  0.52973   18.570  0.000
+pair_coeff  14  33 ljlambda 0.200000  6.570  0.681081  19.710  0.000
+pair_coeff  14  34 ljlambda 0.200000  6.360  0.7       19.080  0.000
+pair_coeff  14  35 ljlambda 0.200000  5.770  0.558108  17.310  0.000
+pair_coeff  14  36 ljlambda 0.200000  6.220  0.52973   18.660  0.000
+pair_coeff  14  37 ljlambda 0.200000  6.020  0.501351  18.060  0.000
+pair_coeff  14  38 ljlambda 0.200000  5.960  0.7       17.880  0.000
+pair_coeff  14  39 ljlambda 0.200000  5.920  0.558108  17.760  0.000
+pair_coeff  14  40 ljlambda 0.200000  6.270  0.69054   18.810  0.000
+pair_coeff  15  15 ljlambda 0.200000  5.180  0.594595  15.540  0.000
+pair_coeff  15  16 ljlambda 0.200000  5.630  0.554054  16.890  0.000
+pair_coeff  15  17 ljlambda 0.200000  5.430  0.513514  16.290  0.000
+pair_coeff  15  18 ljlambda 0.200000  5.370  0.797297  16.110  0.000
+pair_coeff  15  19 ljlambda 0.200000  5.330  0.594595  15.990  0.000
+pair_coeff  15  20 ljlambda 0.200000  5.680  0.783784  17.040  0.000
+pair_coeff  15  21 ljlambda 0.200000  5.680  0.501352  17.040  0.000
+pair_coeff  15  22 ljlambda 0.200000  4.840  0.435135  14.520  0.000
+pair_coeff  15  23 ljlambda 0.200000  5.770  0.387838  17.310  0.000
+pair_coeff  15  24 ljlambda 0.200000  5.400  0.444595  16.200  0.000
+pair_coeff  15  25 ljlambda 0.200000  5.870  0.208109  17.610  0.000
+pair_coeff  15  26 ljlambda 0.200000  5.110  0.463514  15.330  0.000
+pair_coeff  15  27 ljlambda 0.200000  5.380  0.34054   16.140  0.000
+pair_coeff  15  28 ljlambda 0.200000  5.550  0.368919  16.650  0.000
+pair_coeff  15  29 ljlambda 0.200000  5.820  0.510811  17.460  0.000
+pair_coeff  15  30 ljlambda 0.200000  5.520  0.520271  16.560  0.000
+pair_coeff  15  31 ljlambda 0.200000  5.680  0.548649  17.040  0.000
+pair_coeff  15  32 ljlambda 0.200000  5.600  0.387838  16.800  0.000
+pair_coeff  15  33 ljlambda 0.200000  5.980  0.539189  17.940  0.000
+pair_coeff  15  34 ljlambda 0.200000  5.770  0.558108  17.310  0.000
+pair_coeff  15  35 ljlambda 0.200000  5.180  0.416216  15.540  0.000
+pair_coeff  15  36 ljlambda 0.200000  5.630  0.387838  16.890  0.000
+pair_coeff  15  37 ljlambda 0.200000  5.430  0.35946   16.290  0.000
+pair_coeff  15  38 ljlambda 0.200000  5.370  0.558108  16.110  0.000
+pair_coeff  15  39 ljlambda 0.200000  5.330  0.416216  15.990  0.000
+pair_coeff  15  40 ljlambda 0.200000  5.680  0.548649  17.040  0.000
+pair_coeff  16  16 ljlambda 0.200000  6.080  0.513514  18.240  35.000
+pair_coeff  16  17 ljlambda 0.200000  5.880  0.472973  17.640  0.000
+pair_coeff  16  18 ljlambda 0.200000  5.820  0.756757  17.460  0.000
+pair_coeff  16  19 ljlambda 0.200000  5.780  0.554054  17.340  0.000
+pair_coeff  16  20 ljlambda 0.200000  6.130  0.743243  18.390  0.000
+pair_coeff  16  21 ljlambda 0.200000  6.130  0.472973  18.390  0.000
+pair_coeff  16  22 ljlambda 0.200000  5.290  0.406757  15.870  0.000
+pair_coeff  16  23 ljlambda 0.200000  6.220  0.35946   18.660  35.000
+pair_coeff  16  24 ljlambda 0.200000  5.850  0.416216  17.550  0.000
+pair_coeff  16  25 ljlambda 0.200000  6.320  0.17973   18.960  35.000
+pair_coeff  16  26 ljlambda 0.200000  5.560  0.435135  16.680  0.000
+pair_coeff  16  27 ljlambda 0.200000  5.830  0.312162  17.490  35.000
+pair_coeff  16  28 ljlambda 0.200000  6.000  0.34054   18.000  35.000
+pair_coeff  16  29 ljlambda 0.200000  6.270  0.482432  18.810  0.000
+pair_coeff  16  30 ljlambda 0.200000  5.970  0.491892  17.910  0.000
+pair_coeff  16  31 ljlambda 0.200000  6.130  0.52027   18.390  0.000
+pair_coeff  16  32 ljlambda 0.200000  6.050  0.35946   18.150  0.000
+pair_coeff  16  33 ljlambda 0.200000  6.430  0.510811  19.290  0.000
+pair_coeff  16  34 ljlambda 0.200000  6.220  0.52973   18.660  0.000
+pair_coeff  16  35 ljlambda 0.200000  5.630  0.387838  16.890  0.000
+pair_coeff  16  36 ljlambda 0.200000  6.080  0.35946   18.240  35.000
+pair_coeff  16  37 ljlambda 0.200000  5.880  0.331081  17.640  0.000
+pair_coeff  16  38 ljlambda 0.200000  5.820  0.52973   17.460  0.000
+pair_coeff  16  39 ljlambda 0.200000  5.780  0.387838  17.340  0.000
+pair_coeff  16  40 ljlambda 0.200000  6.130  0.52027   18.390  0.000
+pair_coeff  17  17 ljlambda 0.200000  5.680  0.432432  17.040  0.000
+pair_coeff  17  18 ljlambda 0.200000  5.620  0.716216  16.860  0.000
+pair_coeff  17  19 ljlambda 0.200000  5.580  0.513514  16.740  0.000
+pair_coeff  17  20 ljlambda 0.200000  5.930  0.702703  17.790  0.000
+pair_coeff  17  21 ljlambda 0.200000  5.930  0.444594  17.790  0.000
+pair_coeff  17  22 ljlambda 0.200000  5.090  0.378378  15.270  0.000
+pair_coeff  17  23 ljlambda 0.200000  6.020  0.331081  18.060  0.000
+pair_coeff  17  24 ljlambda 0.200000  5.650  0.387838  16.950  0.000
+pair_coeff  17  25 ljlambda 0.200000  6.120  0.151351  18.360  0.000
+pair_coeff  17  26 ljlambda 0.200000  5.360  0.406757  16.080  0.000
+pair_coeff  17  27 ljlambda 0.200000  5.630  0.283783  16.890  0.000
+pair_coeff  17  28 ljlambda 0.200000  5.800  0.312162  17.400  0.000
+pair_coeff  17  29 ljlambda 0.200000  6.070  0.454054  18.210  0.000
+pair_coeff  17  30 ljlambda 0.200000  5.770  0.463513  17.310  0.000
+pair_coeff  17  31 ljlambda 0.200000  5.930  0.491892  17.790  0.000
+pair_coeff  17  32 ljlambda 0.200000  5.850  0.331081  17.550  0.000
+pair_coeff  17  33 ljlambda 0.200000  6.230  0.482432  18.690  0.000
+pair_coeff  17  34 ljlambda 0.200000  6.020  0.501351  18.060  0.000
+pair_coeff  17  35 ljlambda 0.200000  5.430  0.35946   16.290  0.000
+pair_coeff  17  36 ljlambda 0.200000  5.880  0.331081  17.640  0.000
+pair_coeff  17  37 ljlambda 0.200000  5.680  0.302702  17.040  0.000
+pair_coeff  17  38 ljlambda 0.200000  5.620  0.501351  16.860  0.000
+pair_coeff  17  39 ljlambda 0.200000  5.580  0.35946   16.740  0.000
+pair_coeff  17  40 ljlambda 0.200000  5.930  0.491892  17.790  0.000
+pair_coeff  18  18 ljlambda 0.200000  5.560  1.000000  16.680  0.000
+pair_coeff  18  19 ljlambda 0.200000  5.520  0.797297  16.560  0.000
+pair_coeff  18  20 ljlambda 0.200000  5.870  0.986486  17.610  0.000
+pair_coeff  18  21 ljlambda 0.200000  5.870  0.643243  17.610  0.000
+pair_coeff  18  22 ljlambda 0.200000  5.030  0.577027  15.090  0.000
+pair_coeff  18  23 ljlambda 0.200000  5.960  0.52973   17.880  0.000
+pair_coeff  18  24 ljlambda 0.200000  5.590  0.586487  16.770  0.000
+pair_coeff  18  25 ljlambda 0.200000  6.060  0.385     18.180  0.000
+pair_coeff  18  26 ljlambda 0.200000  5.300  0.605405  15.900  0.000
+pair_coeff  18  27 ljlambda 0.200000  5.570  0.482432  16.710  0.000
+pair_coeff  18  28 ljlambda 0.200000  5.740  0.56189   17.220  0.000
+pair_coeff  18  29 ljlambda 0.200000  6.010  0.652703  18.030  0.000
+pair_coeff  18  30 ljlambda 0.200000  5.710  0.662162  17.130  0.000
+pair_coeff  18  31 ljlambda 0.200000  5.870  0.69054   17.610  0.000
+pair_coeff  18  32 ljlambda 0.200000  5.790  0.52973   17.370  0.000
+pair_coeff  18  33 ljlambda 0.200000  6.170  0.681081  18.510  0.000
+pair_coeff  18  34 ljlambda 0.200000  5.960  0.7       17.880  0.000
+pair_coeff  18  35 ljlambda 0.200000  5.370  0.558108  16.110  0.000
+pair_coeff  18  36 ljlambda 0.200000  5.820  0.52973   17.460  0.000
+pair_coeff  18  37 ljlambda 0.200000  5.620  0.501351  16.860  0.000
+pair_coeff  18  38 ljlambda 0.200000  5.560  0.70      16.680  0.000
+pair_coeff  18  39 ljlambda 0.200000  5.520  0.558108  16.560  0.000
+pair_coeff  18  40 ljlambda 0.200000  5.870  0.69054   17.610  0.000
+pair_coeff  19  19 ljlambda 0.200000  5.480  0.594595  16.440  0.000
+pair_coeff  19  20 ljlambda 0.200000  5.830  0.783784  17.490  0.000
+pair_coeff  19  21 ljlambda 0.200000  5.830  0.501352  17.490  0.000
+pair_coeff  19  22 ljlambda 0.200000  4.990  0.435135  14.970  0.000
+pair_coeff  19  23 ljlambda 0.200000  5.920  0.387838  17.760  0.000
+pair_coeff  19  24 ljlambda 0.200000  5.550  0.444595  16.650  0.000
+pair_coeff  19  25 ljlambda 0.200000  6.020  0.208109  18.060  0.000
+pair_coeff  19  26 ljlambda 0.200000  5.260  0.463514  15.780  0.000
+pair_coeff  19  27 ljlambda 0.200000  5.530  0.34054   16.590  0.000
+pair_coeff  19  28 ljlambda 0.200000  5.700  0.368919  17.100  0.000
+pair_coeff  19  29 ljlambda 0.200000  5.970  0.510811  17.910  0.000
+pair_coeff  19  30 ljlambda 0.200000  5.670  0.520271  17.010  0.000
+pair_coeff  19  31 ljlambda 0.200000  5.830  0.548649  17.490  0.000
+pair_coeff  19  32 ljlambda 0.200000  5.750  0.387838  17.250  0.000
+pair_coeff  19  33 ljlambda 0.200000  6.130  0.539189  18.390  0.000
+pair_coeff  19  34 ljlambda 0.200000  5.920  0.558108  17.760  0.000
+pair_coeff  19  35 ljlambda 0.200000  5.330  0.416216  15.990  0.000
+pair_coeff  19  36 ljlambda 0.200000  5.780  0.387838  17.340  0.000
+pair_coeff  19  37 ljlambda 0.200000  5.580  0.35946   16.740  0.000
+pair_coeff  19  38 ljlambda 0.200000  5.520  0.558108  16.560  0.000
+pair_coeff  19  39 ljlambda 0.200000  5.480  0.416216  16.440  0.000
+pair_coeff  19  40 ljlambda 0.200000  5.830  0.548649  17.490  0.000
+pair_coeff  20  20 ljlambda 0.200000  6.180  0.972973  18.540  0.000
+pair_coeff  20  21 ljlambda 0.200000  6.180  0.633784  18.540  0.000
+pair_coeff  20  22 ljlambda 0.200000  5.340  0.567568  16.020  0.000
+pair_coeff  20  23 ljlambda 0.200000  6.270  0.52027   18.810  0.000
+pair_coeff  20  24 ljlambda 0.200000  5.900  0.577027  17.700  0.000
+pair_coeff  20  25 ljlambda 0.200000  6.370  0.34054   19.110  0.000
+pair_coeff  20  26 ljlambda 0.200000  5.610  0.595946  16.830  0.000
+pair_coeff  20  27 ljlambda 0.200000  5.880  0.472973  17.640  0.000
+pair_coeff  20  28 ljlambda 0.200000  6.050  0.501351  18.150  0.000
+pair_coeff  20  29 ljlambda 0.200000  6.320  0.643243  18.960  0.000
+pair_coeff  20  30 ljlambda 0.200000  6.020  0.652703  18.060  0.000
+pair_coeff  20  31 ljlambda 0.200000  6.180  0.681081  18.540  0.000
+pair_coeff  20  32 ljlambda 0.200000  6.100  0.52027   18.300  0.000
+pair_coeff  20  33 ljlambda 0.200000  6.480  0.671621  19.440  0.000
+pair_coeff  20  34 ljlambda 0.200000  6.270  0.69054   18.810  0.000
+pair_coeff  20  35 ljlambda 0.200000  5.680  0.548649  17.040  0.000
+pair_coeff  20  36 ljlambda 0.200000  6.130  0.52027   18.390  0.000
+pair_coeff  20  37 ljlambda 0.200000  5.930  0.491892  17.790  0.000
+pair_coeff  20  38 ljlambda 0.200000  5.870  0.69054   17.610  0.000
+pair_coeff  20  39 ljlambda 0.200000  5.830  0.548649  17.490  0.000
+pair_coeff  20  40 ljlambda 0.200000  6.180  0.681081  18.540  0.000
+pair_coeff  21  21 ljlambda 0.200000  6.180  0.586487  18.540  0.000
+pair_coeff  21  22 ljlambda 0.200000  5.340  0.52027   16.020  0.000
+pair_coeff  21  23 ljlambda 0.200000  6.270  0.472973  18.810  0.000
+pair_coeff  21  24 ljlambda 0.200000  5.900  0.52973   17.700  0.000
+pair_coeff  21  25 ljlambda 0.200000  6.370  0.293243  19.110  0.000
+pair_coeff  21  26 ljlambda 0.200000  5.610  0.548649  16.830  0.000
+pair_coeff  21  27 ljlambda 0.200000  5.880  0.425676  17.640  0.000
+pair_coeff  21  28 ljlambda 0.200000  6.050  0.454054  18.150  0.000
+pair_coeff  21  29 ljlambda 0.200000  6.320  0.595946  18.960  0.000
+pair_coeff  21  30 ljlambda 0.200000  6.020  0.605405  18.060  0.000
+pair_coeff  21  31 ljlambda 0.200000  6.180  0.633784  18.540  0.000
+pair_coeff  21  32 ljlambda 0.200000  6.100  0.472973  18.300  0.000
+pair_coeff  21  33 ljlambda 0.200000  6.480  0.624324  19.440  0.000
+pair_coeff  21  34 ljlambda 0.200000  6.270  0.643243  18.810  0.000
+pair_coeff  21  35 ljlambda 0.200000  5.680  0.501352  17.040  0.000
+pair_coeff  21  36 ljlambda 0.200000  6.130  0.472973  18.390  0.000
+pair_coeff  21  37 ljlambda 0.200000  5.930  0.444594  17.790  0.000
+pair_coeff  21  38 ljlambda 0.200000  5.870  0.643243  17.610  0.000
+pair_coeff  21  39 ljlambda 0.200000  5.830  0.501352  17.490  0.000
+pair_coeff  21  40 ljlambda 0.200000  6.180  0.633784  18.540  0.000
+pair_coeff  22  22 ljlambda 0.200000  4.500  0.454054  13.500  0.000
+pair_coeff  22  23 ljlambda 0.200000  5.430  0.406757  16.290  0.000
+pair_coeff  22  24 ljlambda 0.200000  5.060  0.463513  15.180  0.000
+pair_coeff  22  25 ljlambda 0.200000  5.530  0.227027  16.590  0.000
+pair_coeff  22  26 ljlambda 0.200000  4.770  0.482432  14.310  0.000
+pair_coeff  22  27 ljlambda 0.200000  5.040  0.35946   15.120  0.000
+pair_coeff  22  28 ljlambda 0.200000  5.210  0.387838  15.630  0.000
+pair_coeff  22  29 ljlambda 0.200000  5.480  0.52973   16.440  0.000
+pair_coeff  22  30 ljlambda 0.200000  5.180  0.539189  15.540  0.000
+pair_coeff  22  31 ljlambda 0.200000  5.340  0.567568  16.020  0.000
+pair_coeff  22  32 ljlambda 0.200000  5.260  0.406757  15.780  0.000
+pair_coeff  22  33 ljlambda 0.200000  5.640  0.558108  16.920  0.000
+pair_coeff  22  34 ljlambda 0.200000  5.430  0.577027  16.290  0.000
+pair_coeff  22  35 ljlambda 0.200000  4.840  0.435135  14.520  0.000
+pair_coeff  22  36 ljlambda 0.200000  5.290  0.406757  15.870  0.000
+pair_coeff  22  37 ljlambda 0.200000  5.090  0.378378  15.270  0.000
+pair_coeff  22  38 ljlambda 0.200000  5.030  0.577027  15.090  0.000
+pair_coeff  22  39 ljlambda 0.200000  4.990  0.435135  14.970  0.000
+pair_coeff  22  40 ljlambda 0.200000  5.340  0.567568  16.020  0.000
+pair_coeff  23  23 ljlambda 0.200000  6.360  0.35946   19.080  35.000
+pair_coeff  23  24 ljlambda 0.200000  5.990  0.416216  17.970  0.000
+pair_coeff  23  25 ljlambda 0.200000  6.460  0.17973   19.380  35.000
+pair_coeff  23  26 ljlambda 0.200000  5.700  0.435135  17.100  0.000
+pair_coeff  23  27 ljlambda 0.200000  5.970  0.312162  17.910  35.000
+pair_coeff  23  28 ljlambda 0.200000  6.140  0.34054   18.420  35.000
+pair_coeff  23  29 ljlambda 0.200000  6.410  0.482432  19.230  0.000
+pair_coeff  23  30 ljlambda 0.200000  6.110  0.491892  18.330  0.000
+pair_coeff  23  31 ljlambda 0.200000  6.270  0.52027   18.810  0.000
+pair_coeff  23  32 ljlambda 0.200000  6.190  0.35946   18.570  0.000
+pair_coeff  23  33 ljlambda 0.200000  6.570  0.510811  19.710  0.000
+pair_coeff  23  34 ljlambda 0.200000  6.360  0.52973   19.080  0.000
+pair_coeff  23  35 ljlambda 0.200000  5.770  0.387838  17.310  0.000
+pair_coeff  23  36 ljlambda 0.200000  6.220  0.35946   18.660  35.000
+pair_coeff  23  37 ljlambda 0.200000  6.020  0.331081  18.060  0.000
+pair_coeff  23  38 ljlambda 0.200000  5.960  0.52973   17.880  0.000
+pair_coeff  23  39 ljlambda 0.200000  5.920  0.387838  17.760  0.000
+pair_coeff  23  40 ljlambda 0.200000  6.270  0.52027   18.810  0.000
+pair_coeff  24  24 ljlambda 0.200000  5.620  0.472973  16.860  0.000
+pair_coeff  24  25 ljlambda 0.200000  6.090  0.236487  18.270  0.000
+pair_coeff  24  26 ljlambda 0.200000  5.330  0.491892  15.990  0.000
+pair_coeff  24  27 ljlambda 0.200000  5.600  0.368919  16.800  0.000
+pair_coeff  24  28 ljlambda 0.200000  5.770  0.397297  17.310  0.000
+pair_coeff  24  29 ljlambda 0.200000  6.040  0.539189  18.120  0.000
+pair_coeff  24  30 ljlambda 0.200000  5.740  0.548649  17.220  0.000
+pair_coeff  24  31 ljlambda 0.200000  5.900  0.577027  17.700  0.000
+pair_coeff  24  32 ljlambda 0.200000  5.820  0.416216  17.460  0.000
+pair_coeff  24  33 ljlambda 0.200000  6.200  0.567568  18.600  0.000
+pair_coeff  24  34 ljlambda 0.200000  5.990  0.586487  17.970  0.000
+pair_coeff  24  35 ljlambda 0.200000  5.400  0.444595  16.200  0.000
+pair_coeff  24  36 ljlambda 0.200000  5.850  0.416216  17.550  0.000
+pair_coeff  24  37 ljlambda 0.200000  5.650  0.387838  16.950  0.000
+pair_coeff  24  38 ljlambda 0.200000  5.590  0.586487  16.770  0.000
+pair_coeff  24  39 ljlambda 0.200000  5.550  0.444595  16.650  0.000
+pair_coeff  24  40 ljlambda 0.200000  5.900  0.577027  17.700  0.000
+pair_coeff  25  25 ljlambda 0.200000  6.560  0.00         7.363   35.000
+pair_coeff  25  26 ljlambda 0.200000  5.800  0.255406  17.400  0.000
+pair_coeff  25  27 ljlambda 0.200000  6.070  0.132432  18.210  35.000
+pair_coeff  25  28 ljlambda 0.200000  6.240  0.17689   18.720  35.000
+pair_coeff  25  29 ljlambda 0.200000  6.510  0.302703  19.530  0.000
+pair_coeff  25  30 ljlambda 0.200000  6.210  0.312162  18.630  0.000
+pair_coeff  25  31 ljlambda 0.200000  6.370  0.34054   19.110  0.000
+pair_coeff  25  32 ljlambda 0.200000  6.290  0.17973   18.870  0.000
+pair_coeff  25  33 ljlambda 0.200000  6.670  0.331081  20.010  0.000
+pair_coeff  25  34 ljlambda 0.200000  6.460  0.35      19.380  0.000
+pair_coeff  25  35 ljlambda 0.200000  5.870  0.208109  17.610  0.000
+pair_coeff  25  36 ljlambda 0.200000  6.320  0.17973   18.960  35.000
+pair_coeff  25  37 ljlambda 0.200000  6.120  0.151351  18.360  0.000
+pair_coeff  25  38 ljlambda 0.200000  6.060  0.385     18.180  0.000
+pair_coeff  25  39 ljlambda 0.200000  6.020  0.208109  18.060  0.000
+pair_coeff  25  40 ljlambda 0.200000  6.370  0.34054   19.110  0.000
+pair_coeff  26  26 ljlambda 0.200000  5.040  0.510811  15.120  0.000
+pair_coeff  26  27 ljlambda 0.200000  5.310  0.387838  15.930  0.000
+pair_coeff  26  28 ljlambda 0.200000  5.480  0.416216  16.440  0.000
+pair_coeff  26  29 ljlambda 0.200000  5.750  0.558108  17.250  0.000
+pair_coeff  26  30 ljlambda 0.200000  5.450  0.567568  16.350  0.000
+pair_coeff  26  31 ljlambda 0.200000  5.610  0.595946  16.830  0.000
+pair_coeff  26  32 ljlambda 0.200000  5.530  0.435135  16.590  0.000
+pair_coeff  26  33 ljlambda 0.200000  5.910  0.586487  17.730  0.000
+pair_coeff  26  34 ljlambda 0.200000  5.700  0.605405  17.100  0.000
+pair_coeff  26  35 ljlambda 0.200000  5.110  0.463514  15.330  0.000
+pair_coeff  26  36 ljlambda 0.200000  5.560  0.435135  16.680  0.000
+pair_coeff  26  37 ljlambda 0.200000  5.360  0.406757  16.080  0.000
+pair_coeff  26  38 ljlambda 0.200000  5.300  0.605405  15.900  0.000
+pair_coeff  26  39 ljlambda 0.200000  5.260  0.463514  15.780  0.000
+pair_coeff  26  40 ljlambda 0.200000  5.610  0.595946  16.830  0.000
+pair_coeff  27  27 ljlambda 0.200000  5.580  0.264865  16.740  35.000
+pair_coeff  27  28 ljlambda 0.200000  5.750  0.293243  17.250  35.000
+pair_coeff  27  29 ljlambda 0.200000  6.020  0.435135  18.060  0.000
+pair_coeff  27  30 ljlambda 0.200000  5.720  0.444594  17.160  0.000
+pair_coeff  27  31 ljlambda 0.200000  5.880  0.472973  17.640  0.000
+pair_coeff  27  32 ljlambda 0.200000  5.800  0.312162  17.400  0.000
+pair_coeff  27  33 ljlambda 0.200000  6.180  0.463513  18.540  0.000
+pair_coeff  27  34 ljlambda 0.200000  5.970  0.482432  17.910  0.000
+pair_coeff  27  35 ljlambda 0.200000  5.380  0.34054   16.140  0.000
+pair_coeff  27  36 ljlambda 0.200000  5.830  0.312162  17.490  35.000
+pair_coeff  27  37 ljlambda 0.200000  5.630  0.283783  16.890  0.000
+pair_coeff  27  38 ljlambda 0.200000  5.570  0.482432  16.710  0.000
+pair_coeff  27  39 ljlambda 0.200000  5.530  0.34054   16.590  0.000
+pair_coeff  27  40 ljlambda 0.200000  5.880  0.472973  17.640  0.000
+pair_coeff  28  28 ljlambda 0.200000  5.920  0.353786  17.760  35.000
+pair_coeff  28  29 ljlambda 0.200000  6.190  0.463513  18.570  0.000
+pair_coeff  28  30 ljlambda 0.200000  5.890  0.472973  17.670  0.000
+pair_coeff  28  31 ljlambda 0.200000  6.050  0.501351  18.150  0.000
+pair_coeff  28  32 ljlambda 0.200000  5.970  0.34054   17.910  0.000
+pair_coeff  28  33 ljlambda 0.200000  6.350  0.491892  19.050  0.000
+pair_coeff  28  34 ljlambda 0.200000  6.140  0.510811  18.420  0.000
+pair_coeff  28  35 ljlambda 0.200000  5.550  0.368919  16.650  0.000
+pair_coeff  28  36 ljlambda 0.200000  6.000  0.34054   18.000  35.000
+pair_coeff  28  37 ljlambda 0.200000  5.800  0.312162  17.400  0.000
+pair_coeff  28  38 ljlambda 0.200000  5.740  0.56189   17.220  0.000
+pair_coeff  28  39 ljlambda 0.200000  5.700  0.368919  17.100  0.000
+pair_coeff  28  40 ljlambda 0.200000  6.050  0.501351  18.150  0.000
+pair_coeff  29  29 ljlambda 0.200000  6.460  0.605405  19.380  0.000
+pair_coeff  29  30 ljlambda 0.200000  6.160  0.614865  18.480  0.000
+pair_coeff  29  31 ljlambda 0.200000  6.320  0.643243  18.960  0.000
+pair_coeff  29  32 ljlambda 0.200000  6.240  0.482432  18.720  0.000
+pair_coeff  29  33 ljlambda 0.200000  6.620  0.633784  19.860  0.000
+pair_coeff  29  34 ljlambda 0.200000  6.410  0.652703  19.230  0.000
+pair_coeff  29  35 ljlambda 0.200000  5.820  0.510811  17.460  0.000
+pair_coeff  29  36 ljlambda 0.200000  6.270  0.482432  18.810  0.000
+pair_coeff  29  37 ljlambda 0.200000  6.070  0.454054  18.210  0.000
+pair_coeff  29  38 ljlambda 0.200000  6.010  0.652703  18.030  0.000
+pair_coeff  29  39 ljlambda 0.200000  5.970  0.510811  17.910  0.000
+pair_coeff  29  40 ljlambda 0.200000  6.320  0.643243  18.960  0.000
+pair_coeff  30  30 ljlambda 0.200000  5.860  0.624324  17.580  0.000
+pair_coeff  30  31 ljlambda 0.200000  6.020  0.652703  18.060  0.000
+pair_coeff  30  32 ljlambda 0.200000  5.940  0.491892  17.820  0.000
+pair_coeff  30  33 ljlambda 0.200000  6.320  0.643243  18.960  0.000
+pair_coeff  30  34 ljlambda 0.200000  6.110  0.662162  18.330  0.000
+pair_coeff  30  35 ljlambda 0.200000  5.520  0.520271  16.560  0.000
+pair_coeff  30  36 ljlambda 0.200000  5.970  0.491892  17.910  0.000
+pair_coeff  30  37 ljlambda 0.200000  5.770  0.463513  17.310  0.000
+pair_coeff  30  38 ljlambda 0.200000  5.710  0.662162  17.130  0.000
+pair_coeff  30  39 ljlambda 0.200000  5.670  0.520271  17.010  0.000
+pair_coeff  30  40 ljlambda 0.200000  6.020  0.652703  18.060  0.000
+pair_coeff  31  31 ljlambda 0.200000  6.180  0.681081  18.540  0.000
+pair_coeff  31  32 ljlambda 0.200000  6.100  0.52027   18.300  0.000
+pair_coeff  31  33 ljlambda 0.200000  6.480  0.671621  19.440  0.000
+pair_coeff  31  34 ljlambda 0.200000  6.270  0.69054   18.810  0.000
+pair_coeff  31  35 ljlambda 0.200000  5.680  0.548649  17.040  0.000
+pair_coeff  31  36 ljlambda 0.200000  6.130  0.52027   18.390  0.000
+pair_coeff  31  37 ljlambda 0.200000  5.930  0.491892  17.790  0.000
+pair_coeff  31  38 ljlambda 0.200000  5.870  0.69054   17.610  0.000
+pair_coeff  31  39 ljlambda 0.200000  5.830  0.548649  17.490  0.000
+pair_coeff  31  40 ljlambda 0.200000  6.180  0.681081  18.540  0.000
+pair_coeff  32  32 ljlambda 0.200000  6.020  0.35946   18.060  0.000
+pair_coeff  32  33 ljlambda 0.200000  6.400  0.510811  19.200  0.000
+pair_coeff  32  34 ljlambda 0.200000  6.190  0.52973   18.570  0.000
+pair_coeff  32  35 ljlambda 0.200000  5.600  0.387838  16.800  0.000
+pair_coeff  32  36 ljlambda 0.200000  6.050  0.35946   18.150  0.000
+pair_coeff  32  37 ljlambda 0.200000  5.850  0.331081  17.550  0.000
+pair_coeff  32  38 ljlambda 0.200000  5.790  0.52973   17.370  0.000
+pair_coeff  32  39 ljlambda 0.200000  5.750  0.387838  17.250  0.000
+pair_coeff  32  40 ljlambda 0.200000  6.100  0.52027   18.300  0.000
+pair_coeff  33  33 ljlambda 0.200000  6.780  0.662162  20.340  0.000
+pair_coeff  33  34 ljlambda 0.200000  6.570  0.681081  19.710  0.000
+pair_coeff  33  35 ljlambda 0.200000  5.980  0.539189  17.940  0.000
+pair_coeff  33  36 ljlambda 0.200000  6.430  0.510811  19.290  0.000
+pair_coeff  33  37 ljlambda 0.200000  6.230  0.482432  18.690  0.000
+pair_coeff  33  38 ljlambda 0.200000  6.170  0.681081  18.510  0.000
+pair_coeff  33  39 ljlambda 0.200000  6.130  0.539189  18.390  0.000
+pair_coeff  33  40 ljlambda 0.200000  6.480  0.671621  19.440  0.000
+pair_coeff  34  34 ljlambda 0.200000  6.360  0.7       19.080  0.000
+pair_coeff  34  35 ljlambda 0.200000  5.770  0.558108  17.310  0.000
+pair_coeff  34  36 ljlambda 0.200000  6.220  0.52973   18.660  0.000
+pair_coeff  34  37 ljlambda 0.200000  6.020  0.501351  18.060  0.000
+pair_coeff  34  38 ljlambda 0.200000  5.960  0.7       17.880  0.000
+pair_coeff  34  39 ljlambda 0.200000  5.920  0.558108  17.760  0.000
+pair_coeff  34  40 ljlambda 0.200000  6.270  0.69054   18.810  0.000
+pair_coeff  35  35 ljlambda 0.200000  5.180  0.416216  15.540  0.000
+pair_coeff  35  36 ljlambda 0.200000  5.630  0.387838  16.890  0.000
+pair_coeff  35  37 ljlambda 0.200000  5.430  0.35946   16.290  0.000
+pair_coeff  35  38 ljlambda 0.200000  5.370  0.558108  16.110  0.000
+pair_coeff  35  39 ljlambda 0.200000  5.330  0.416216  15.990  0.000
+pair_coeff  35  40 ljlambda 0.200000  5.680  0.548649  17.040  0.000
+pair_coeff  36  36 ljlambda 0.200000  6.080  0.35946   18.240  35.000
+pair_coeff  36  37 ljlambda 0.200000  5.880  0.331081  17.640  0.000
+pair_coeff  36  38 ljlambda 0.200000  5.820  0.52973   17.460  0.000
+pair_coeff  36  39 ljlambda 0.200000  5.780  0.387838  17.340  0.000
+pair_coeff  36  40 ljlambda 0.200000  6.130  0.52027   18.390  0.000
+pair_coeff  37  37 ljlambda 0.200000  5.680  0.302702  17.040  0.000
+pair_coeff  37  38 ljlambda 0.200000  5.620  0.501351  16.860  0.000
+pair_coeff  37  39 ljlambda 0.200000  5.580  0.35946   16.740  0.000
+pair_coeff  37  40 ljlambda 0.200000  5.930  0.491892  17.790  0.000
+pair_coeff  38  38 ljlambda 0.200000  5.560  0.70      16.680  0.000
+pair_coeff  38  39 ljlambda 0.200000  5.520  0.558108  16.560  0.000
+pair_coeff  38  40 ljlambda 0.200000  5.870  0.69054   17.610  0.000
+pair_coeff  39  39 ljlambda 0.200000  5.480  0.416216  16.440  0.000
+pair_coeff  39  40 ljlambda 0.200000  5.830  0.548649  17.490  0.000
+pair_coeff  40  40 ljlambda 0.200000  6.180  0.681081  18.540  0.000
+pair_coeff 1 41 ljlambda 0.2000000    7.310  0.39200   21.930 35.0 
+pair_coeff 2 41 ljlambda 0.2000000    6.470  0.29750   19.410 35.0 
+pair_coeff 3 41 ljlambda 0.2000000    7.400  0.23000   22.200 35.0 
+pair_coeff 4 41 ljlambda 0.2000000    7.030  0.31100   21.090 35.0 
+pair_coeff 5 41 ljlambda 0.2000000    7.500  -0.0270   22.500 35.0 
+pair_coeff 6 41 ljlambda 0.2000000    6.740  0.33800   20.220 35.0 
+pair_coeff 7 41 ljlambda 0.2000000    7.010  0.16200   21.030 35.0 
+pair_coeff 8 41 ljlambda 0.2000000    7.180  0.20250   21.540 35.0 
+pair_coeff 9 41 ljlambda 0.2000000    7.450  0.40550   22.350 35.0 
+pair_coeff 10 41 ljlambda 0.2000000   7.150  0.41900   21.450 35.0 
+pair_coeff 11 41 ljlambda 0.2000000   7.310  0.45950   21.930 35.0 
+pair_coeff 12 41 ljlambda 0.2000000   7.230  0.23000   21.690 35.0 
+pair_coeff 13 41 ljlambda 0.2000000   7.610  0.44600   22.830 35.0 
+pair_coeff 14 41 ljlambda 0.2000000   7.400  0.47300   22.200 35.0 
+pair_coeff 15 41 ljlambda 0.2000000   6.810  0.27050   20.430 35.0 
+pair_coeff 16 41 ljlambda 0.2000000   7.260  0.23000   21.780 35.0 
+pair_coeff 17 41 ljlambda 0.2000000   7.060  0.18900   21.180 35.0 
+pair_coeff 18 41 ljlambda 0.2000000   7.000  0.47300   21.000 35.0 
+pair_coeff 19 41 ljlambda 0.2000000   6.960  0.27050   20.880 35.0 
+pair_coeff 20 41 ljlambda 0.2000000   7.310  0.32165   21.930 35.0 
+pair_coeff 21 41 ljlambda 0.2000000   7.310  0.27440   21.930 35.0 
+pair_coeff 22 41 ljlambda 0.2000000   6.470  0.20825   19.410 35.0 
+pair_coeff 23 41 ljlambda 0.2000000   7.400  0.16100   22.200 35.0 
+pair_coeff 24 41 ljlambda 0.2000000   7.030  0.21770   21.090 35.0 
+pair_coeff 25 41 ljlambda 0.2000000   7.500  -0.0189   22.500 35.0 
+pair_coeff 26 41 ljlambda 0.2000000   6.740  0.23660   20.220 35.0 
+pair_coeff 27 41 ljlambda 0.2000000   7.010  0.11340   21.030 35.0 
+pair_coeff 28 41 ljlambda 0.2000000   7.180  0.14175   21.540 35.0 
+pair_coeff 29 41 ljlambda 0.2000000   7.450  0.28385   22.350 35.0 
+pair_coeff 30 41 ljlambda 0.2000000   7.150  0.29330   21.450 35.0 
+pair_coeff 31 41 ljlambda 0.2000000   7.310  0.32165   21.930 35.0 
+pair_coeff 32 41 ljlambda 0.2000000   7.230  0.16100   21.690 35.0 
+pair_coeff 33 41 ljlambda 0.2000000   7.610  0.31220   22.830 35.0 
+pair_coeff 34 41 ljlambda 0.2000000   7.400  0.33110   22.200 35.0 
+pair_coeff 35 41 ljlambda 0.2000000   6.810  0.18935   20.430 35.0 
+pair_coeff 36 41 ljlambda 0.2000000   7.260  0.16100   21.780 35.0 
+pair_coeff 37 41 ljlambda 0.2000000   7.060  0.13230   21.180 35.0 
+pair_coeff 38 41 ljlambda 0.2000000   7.000  0.33110   21.000 35.0 
+pair_coeff 39 41 ljlambda 0.2000000   6.960  0.18935   20.880 35.0 
+pair_coeff 40 41 ljlambda 0.2000000   7.310  0.32165   21.930 35.0 
+pair_coeff 1 42 ljlambda 0.2000000   7.200  0.40550   21.600 35.0 
+pair_coeff 2 42 ljlambda 0.2000000   6.360  0.31100   19.080 35.0 
+pair_coeff 3 42 ljlambda 0.2000000   7.290  0.24350   21.870 35.0 
+pair_coeff 4 42 ljlambda 0.2000000   6.920  0.32450   20.760 35.0 
+pair_coeff 5 42 ljlambda 0.2000000   7.390  -0.01350   22.170 35.0 
+pair_coeff 6 42 ljlambda 0.2000000   6.630  0.35150   19.890 35.0 
+pair_coeff 7 42 ljlambda 0.2000000   6.900  0.17550   20.700 35.0 
+pair_coeff 8 42 ljlambda 0.2000000   7.070  0.21600   21.210 35.0 
+pair_coeff 9 42 ljlambda 0.2000000   7.340  0.41900   22.020 35.0 
+pair_coeff 10 42 ljlambda 0.2000000   7.040  0.43250   21.120 35.0 
+pair_coeff 11 42 ljlambda 0.2000000   7.200  0.47300   21.600 35.0 
+pair_coeff 12 42 ljlambda 0.2000000   7.120  0.24350   21.360 35.0 
+pair_coeff 13 42 ljlambda 0.2000000   7.500  0.45950   22.500 35.0 
+pair_coeff 14 42 ljlambda 0.2000000   7.290  0.48650   21.870 35.0 
+pair_coeff 15 42 ljlambda 0.2000000   6.700  0.28400   20.100 35.0 
+pair_coeff 16 42 ljlambda 0.2000000   7.150  0.24350   21.450 35.0 
+pair_coeff 17 42 ljlambda 0.2000000   6.950  0.20250   20.850 35.0 
+pair_coeff 18 42 ljlambda 0.2000000   6.890  0.48650   20.670 35.0 
+pair_coeff 19 42 ljlambda 0.2000000   6.850  0.28400   20.550 35.0 
+pair_coeff 20 42 ljlambda 0.2000000   7.200  0.33110   21.600 35.0 
+pair_coeff 21 42 ljlambda 0.2000000   7.200  0.28385   21.600 35.0 
+pair_coeff 22 42 ljlambda 0.2000000   6.360  0.21770   19.080 35.0 
+pair_coeff 23 42 ljlambda 0.2000000   7.290  0.17045   21.870 35.0 
+pair_coeff 24 42 ljlambda 0.2000000   6.920  0.22715   20.760 35.0 
+pair_coeff 25 42 ljlambda 0.2000000   7.390  -0.0094   22.170 35.0 
+pair_coeff 26 42 ljlambda 0.2000000   6.630  0.24605   19.890 35.0 
+pair_coeff 27 42 ljlambda 0.2000000   6.900  0.12285   20.700 35.0 
+pair_coeff 28 42 ljlambda 0.2000000   7.070  0.15120   21.210 35.0 
+pair_coeff 29 42 ljlambda 0.2000000   7.340  0.29330   22.020 35.0 
+pair_coeff 30 42 ljlambda 0.2000000   7.040  0.30275   21.120 35.0 
+pair_coeff 31 42 ljlambda 0.2000000   7.200  0.33110   21.600 35.0 
+pair_coeff 32 42 ljlambda 0.2000000   7.120  0.17045   21.360 35.0 
+pair_coeff 33 42 ljlambda 0.2000000   7.500  0.32165   22.500 35.0 
+pair_coeff 34 42 ljlambda 0.2000000   7.290  0.34055   21.870 35.0 
+pair_coeff 35 42 ljlambda 0.2000000   6.700  0.19880   20.100 35.0 
+pair_coeff 36 42 ljlambda 0.2000000   7.150  0.17045   21.450 35.0 
+pair_coeff 37 42 ljlambda 0.2000000   6.950  0.14175   20.850 35.0 
+pair_coeff 38 42 ljlambda 0.2000000   6.890  0.34055   20.670 35.0 
+pair_coeff 39 42 ljlambda 0.2000000   6.850  0.19880   20.550 35.0 
+pair_coeff 40 42 ljlambda 0.2000000   7.200  0.33110   21.600 35.0 
+pair_coeff 1 43 ljlambda 0.2000000   7.345  0.32450   22.035 35.0 
+pair_coeff 2 43 ljlambda 0.2000000   6.505  0.23000   19.515 35.0 
+pair_coeff 3 43 ljlambda 0.2000000   7.435  0.16250   22.305 35.0 
+pair_coeff 4 43 ljlambda 0.2000000   7.065  0.24350   21.195 35.0 
+pair_coeff 5 43 ljlambda 0.2000000   7.535  -0.09450   22.605 35.0 
+pair_coeff 6 43 ljlambda 0.2000000   6.775  0.27050   20.325 35.0 
+pair_coeff 7 43 ljlambda 0.2000000   7.045  0.09450   21.135 35.0 
+pair_coeff 8 43 ljlambda 0.2000000   7.215  0.13500   21.645 35.0 
+pair_coeff 9 43 ljlambda 0.2000000   7.485  0.33800   22.455 35.0 
+pair_coeff 10 43 ljlambda 0.2000000   7.185  0.35150   21.555 35.0 
+pair_coeff 11 43 ljlambda 0.2000000   7.345  0.39200   22.035 35.0 
+pair_coeff 12 43 ljlambda 0.2000000   7.265  0.16250   21.795 35.0 
+pair_coeff 13 43 ljlambda 0.2000000   7.645  0.37850   22.935 35.0 
+pair_coeff 14 43 ljlambda 0.2000000   7.435  0.40550   22.305 35.0 
+pair_coeff 15 43 ljlambda 0.2000000   6.845  0.20300   20.535 35.0 
+pair_coeff 16 43 ljlambda 0.2000000   7.295  0.16250   21.885 35.0 
+pair_coeff 17 43 ljlambda 0.2000000   7.095  0.12150   21.285 35.0 
+pair_coeff 18 43 ljlambda 0.2000000   7.035  0.40550   21.105 35.0 
+pair_coeff 19 43 ljlambda 0.2000000   6.995  0.20300   20.985 35.0 
+pair_coeff 20 43 ljlambda 0.2000000   7.345  0.27440   22.035 35.0 
+pair_coeff 21 43 ljlambda 0.2000000   7.345  0.22715   22.035 35.0 
+pair_coeff 22 43 ljlambda 0.2000000   6.505  0.16100   19.515 35.0 
+pair_coeff 23 43 ljlambda 0.2000000   7.435  0.11375   22.305 35.0 
+pair_coeff 24 43 ljlambda 0.2000000   7.065  0.17045   21.195 35.0 
+pair_coeff 25 43 ljlambda 0.2000000   7.535  -0.0661   22.605 35.0 
+pair_coeff 26 43 ljlambda 0.2000000   6.775  0.18935   20.325 35.0 
+pair_coeff 27 43 ljlambda 0.2000000   7.045  0.06615   21.135 35.0 
+pair_coeff 28 43 ljlambda 0.2000000   7.215  0.09450   21.645 35.0 
+pair_coeff 29 43 ljlambda 0.2000000   7.485  0.23660   22.455 35.0 
+pair_coeff 30 43 ljlambda 0.2000000   7.185  0.24605   21.555 35.0 
+pair_coeff 31 43 ljlambda 0.2000000   7.345  0.27440   22.035 35.0 
+pair_coeff 32 43 ljlambda 0.2000000   7.265  0.11375   21.795 35.0 
+pair_coeff 33 43 ljlambda 0.2000000   7.645  0.26495   22.935 35.0 
+pair_coeff 34 43 ljlambda 0.2000000   7.435  0.28385   22.305 35.0 
+pair_coeff 35 43 ljlambda 0.2000000   6.845  0.14210   20.535 35.0 
+pair_coeff 36 43 ljlambda 0.2000000   7.295  0.11375   21.885 35.0 
+pair_coeff 37 43 ljlambda 0.2000000   7.095  0.08505   21.285 35.0 
+pair_coeff 38 43 ljlambda 0.2000000   7.035  0.28385   21.105 35.0 
+pair_coeff 39 43 ljlambda 0.2000000   6.995  0.14210   20.985 35.0 
+pair_coeff 40 43 ljlambda 0.2000000   7.345  0.27440   22.035 35.0 
+pair_coeff 1 44 ljlambda 0.2000000   7.175  0.40550   21.525 35.0 
+pair_coeff 2 44 ljlambda 0.2000000   6.335  0.31100   19.005 35.0 
+pair_coeff 3 44 ljlambda 0.2000000   7.265  0.24350   21.795 35.0 
+pair_coeff 4 44 ljlambda 0.2000000   6.895  0.32450   20.685 35.0 
+pair_coeff 5 44 ljlambda 0.2000000   7.365  -0.01350   22.095 35.0 
+pair_coeff 6 44 ljlambda 0.2000000   6.605  0.35150   19.815 35.0 
+pair_coeff 7 44 ljlambda 0.2000000   6.875  0.17550   20.625 35.0 
+pair_coeff 8 44 ljlambda 0.2000000   7.045  0.21600   21.135 35.0 
+pair_coeff 9 44 ljlambda 0.2000000   7.315  0.41900   21.945 35.0 
+pair_coeff 10 44 ljlambda 0.2000000   7.015  0.43250   21.045 35.0 
+pair_coeff 11 44 ljlambda 0.2000000   7.175  0.47300   21.525 35.0 
+pair_coeff 12 44 ljlambda 0.2000000   7.095  0.24350   21.285 35.0 
+pair_coeff 13 44 ljlambda 0.2000000   7.475  0.45950   22.425 35.0 
+pair_coeff 14 44 ljlambda 0.2000000   7.265  0.48650   21.795 35.0 
+pair_coeff 15 44 ljlambda 0.2000000   6.675  0.28400   20.025 35.0 
+pair_coeff 16 44 ljlambda 0.2000000   7.125  0.24350   21.375 35.0 
+pair_coeff 17 44 ljlambda 0.2000000   6.925  0.20250   20.775 35.0 
+pair_coeff 18 44 ljlambda 0.2000000   6.865  0.48650   20.595 35.0 
+pair_coeff 19 44 ljlambda 0.2000000   6.825  0.28400   20.475 35.0 
+pair_coeff 20 44 ljlambda 0.2000000   7.175  0.33110   21.525 35.0 
+pair_coeff 21 44 ljlambda 0.2000000   7.175  0.28385   21.525 35.0 
+pair_coeff 22 44 ljlambda 0.2000000   6.335  0.21770   19.005 35.0 
+pair_coeff 23 44 ljlambda 0.2000000   7.265  0.17045   21.795 35.0 
+pair_coeff 24 44 ljlambda 0.2000000   6.895  0.22715   20.685 35.0 
+pair_coeff 25 44 ljlambda 0.2000000   7.365  -0.0094   22.095 35.0 
+pair_coeff 26 44 ljlambda 0.2000000   6.605  0.24605   19.815 35.0 
+pair_coeff 27 44 ljlambda 0.2000000   6.875  0.12285   20.625 35.0 
+pair_coeff 28 44 ljlambda 0.2000000   7.045  0.15120   21.135 35.0 
+pair_coeff 29 44 ljlambda 0.2000000   7.315  0.29330   21.945 35.0 
+pair_coeff 30 44 ljlambda 0.2000000   7.015  0.30275   21.045 35.0 
+pair_coeff 31 44 ljlambda 0.2000000   7.175  0.33110   21.525 35.0 
+pair_coeff 32 44 ljlambda 0.2000000   7.095  0.17045   21.285 35.0 
+pair_coeff 33 44 ljlambda 0.2000000   7.475  0.32165   22.425 35.0 
+pair_coeff 34 44 ljlambda 0.2000000   7.265  0.34055   21.795 35.0 
+pair_coeff 35 44 ljlambda 0.2000000   6.675  0.19880   20.025 35.0 
+pair_coeff 36 44 ljlambda 0.2000000   7.125  0.17045   21.375 35.0 
+pair_coeff 37 44 ljlambda 0.2000000   6.925  0.14175   20.775 35.0 
+pair_coeff 38 44 ljlambda 0.2000000   6.865  0.34055   20.595 35.0 
+pair_coeff 39 44 ljlambda 0.2000000   6.825  0.19880   20.475 35.0 
+pair_coeff 40 44 ljlambda 0.2000000   7.175  0.33110   21.525 35.0 
+pair_coeff 41 41 ljlambda 0.2000000   8.440  -0.0540   25.320 35.0 
+pair_coeff 41 42 ljlambda 0.2000000   8.330  -0.0405   24.990 35.0 
+pair_coeff 41 43 ljlambda 0.2000000   8.475  -0.1215   25.425 35.0 
+pair_coeff 41 44 ljlambda 0.2000000   8.305  -0.0405   24.915 35.0 
+pair_coeff 42 42 ljlambda 0.2000000   8.220  -0.0270   24.660 35.0 
+pair_coeff 42 43 ljlambda 0.2000000   8.365  -0.1080   25.095 35.0 
+pair_coeff 42 44 ljlambda 0.2000000   8.195  -0.0270   24.585 35.0 
+pair_coeff 43 43 ljlambda 0.2000000   8.510  -0.1890   25.530 35.0 
+pair_coeff 44 44 ljlambda 0.2000000   8.170  -0.0270   24.510 35.0 
+
+pair_coeff 1  45 ljlambda 0.2000000   5.930  0.635135  17.790  0.000
+pair_coeff 2  45 ljlambda 0.2000000   5.090  0.540540  15.270  0.000
+pair_coeff 3  45 ljlambda 0.2000000   6.020  0.472973  18.060  0.000
+pair_coeff 4  45 ljlambda 0.2000000   5.650  0.554054  16.950  0.000
+pair_coeff 5  45 ljlambda 0.2000000   6.120  0.216216  18.360  0.000
+pair_coeff 6  45 ljlambda 0.2000000   5.360  0.581081  16.080  0.000
+pair_coeff 7  45 ljlambda 0.2000000   5.630  0.405405  16.890  0.000
+pair_coeff 8  45 ljlambda 0.2000000   5.800  0.445946  17.400  0.000
+pair_coeff 9  45 ljlambda 0.2000000   6.070  0.648649  18.210  0.000
+pair_coeff 10 45 ljlambda 0.2000000   5.770  0.662162  17.310  0.000
+pair_coeff 11 45 ljlambda 0.2000000   5.930  0.702703  17.790  0.000
+pair_coeff 12 45 ljlambda 0.2000000   5.850  0.472973  17.550  0.000
+pair_coeff 13 45 ljlambda 0.2000000   6.230  0.689189  18.690  0.000
+pair_coeff 14 45 ljlambda 0.2000000   6.020  0.716216  18.060  0.000
+pair_coeff 15 45 ljlambda 0.2000000   5.430  0.513514  16.290  0.000 
+pair_coeff 16 45 ljlambda 0.2000000   5.880  0.472973  17.640  0.000 
+pair_coeff 17 45 ljlambda 0.2000000   5.680  0.432432  17.040  0.000 
+pair_coeff 18 45 ljlambda 0.2000000   5.620  0.716216  16.860  0.000 
+pair_coeff 19 45 ljlambda 0.2000000   5.580  0.513514  16.740  0.000 
+pair_coeff 20 45 ljlambda 0.2000000   5.930  0.702703  17.790  0.000 
+pair_coeff 21 45 ljlambda 0.2000000   5.930  0.444594  17.790  0.000 
+pair_coeff 22 45 ljlambda 0.2000000   5.090  0.378378  15.270  0.000 
+pair_coeff 23 45 ljlambda 0.2000000   6.020  0.331081  18.060  0.000 
+pair_coeff 24 45 ljlambda 0.2000000   5.650  0.387838  16.950  0.000 
+pair_coeff 25 45 ljlambda 0.2000000   6.120  0.151351  18.360  0.000 
+pair_coeff 26 45 ljlambda 0.2000000   5.360  0.406757  16.080  0.000 
+pair_coeff 27 45 ljlambda 0.2000000   5.630  0.283783  16.890  0.000 
+pair_coeff 28 45 ljlambda 0.2000000   5.800  0.312162  17.400  0.000 
+pair_coeff 29 45 ljlambda 0.2000000   6.070  0.454054  18.210  0.000 
+pair_coeff 30 45 ljlambda 0.2000000   5.770  0.463513  17.310  0.000 
+pair_coeff 31 45 ljlambda 0.2000000   5.930  0.491892  17.790  0.000 
+pair_coeff 32 45 ljlambda 0.2000000   5.850  0.331081  17.550  0.000 
+pair_coeff 33 45 ljlambda 0.2000000   6.230  0.482432  18.690  0.000 
+pair_coeff 34 45 ljlambda 0.2000000   6.020  0.501351  18.060  0.000 
+pair_coeff 35 45 ljlambda 0.2000000   5.430  0.35946   16.290  0.000 
+pair_coeff 36 45 ljlambda 0.2000000   5.880  0.331081  17.640  0.000 
+pair_coeff 37 45 ljlambda 0.2000000   5.680  0.302702  17.040  0.000 
+pair_coeff 38 45 ljlambda 0.2000000   5.620  0.501351  16.860  0.000 
+pair_coeff 39 45 ljlambda 0.2000000   5.580  0.35946   16.740  0.000 
+pair_coeff 40 45 ljlambda 0.2000000   5.930  0.491892  17.790  0.000 
+pair_coeff 41 45 ljlambda 0.2000000   7.060  0.18900   21.180 35.0
+pair_coeff 42 45 ljlambda 0.2000000   6.950  0.20250   20.850 35.0 
+pair_coeff 43 45 ljlambda  0.2000000  7.095  0.12150   21.285 35.0 
+pair_coeff 44 45 ljlambda  0.2000000  6.925  0.20250   20.775 35.0  
+pair_coeff 45 45 ljlambda  0.2000000  5.680  0.432432  20.040  0.000   
+
+pair_coeff 1  46 ljlambda 0.2000000   5.75500011      0.540693283       17.2649994      0.0
+pair_coeff 2  46 ljlambda 0.2000000   4.91499996      0.474477142       14.7449999      0.0
+pair_coeff 3  46 ljlambda 0.2000000   5.84500027      0.427179903       17.5349998      0.0
+pair_coeff 4  46 ljlambda 0.2000000   5.47499990      0.483936608       16.4249992      0.0
+pair_coeff 5  46 ljlambda 0.2000000   5.94499969      0.247450009       17.8349991      0.0
+pair_coeff 6  46 ljlambda 0.2000000   5.18499994      0.502855480       15.5550003      0.0
+pair_coeff 7  46 ljlambda 0.2000000   5.45499992      0.379882306       16.3649998      0.0
+pair_coeff 8  46 ljlambda 0.2000000   5.62500000      0.408260673       16.8750000      0.0
+pair_coeff 9  46 ljlambda 0.2000000   5.89499998      0.550152779       17.6849995      0.0
+pair_coeff 10 46 ljlambda 0.2000000   5.59500027      0.559612155       16.7849998      0.0
+pair_coeff 11 46 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0
+pair_coeff 12 46 ljlambda 0.2000000   5.67500019      0.427179903       17.0250015      0.0
+pair_coeff 13 46 ljlambda 0.2000000   6.05500031      0.578531086       18.1650009      0.0
+pair_coeff 14 46 ljlambda 0.2000000   5.84500027      0.597450018       17.5349998      0.0
+pair_coeff 15 46 ljlambda 0.2000000   5.25500011      0.455558240       15.7650003      0.0 
+pair_coeff 16 46 ljlambda 0.2000000   5.70499992      0.427179903       17.1149998      0.0 
+pair_coeff 17 46 ljlambda 0.2000000   5.50500011      0.398801178       16.5149994      0.0 
+pair_coeff 18 46 ljlambda 0.2000000   5.44499969      0.597450018       16.3349991      0.0 
+pair_coeff 19 46 ljlambda 0.2000000   5.40499973      0.455558240       16.2150002      0.0 
+pair_coeff 20 46 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0 
+pair_coeff 21 46 ljlambda 0.2000000   5.75500011      0.540693283       17.2649994      0.0 
+pair_coeff 22 46 ljlambda 0.2000000   4.91499996      0.474477142       14.7449999      0.0 
+pair_coeff 23 46 ljlambda 0.2000000   5.84500027      0.427179903       17.5349998      0.0 
+pair_coeff 24 46 ljlambda 0.2000000   5.47499990      0.483936608       16.4249992      0.0 
+pair_coeff 25 46 ljlambda 0.2000000   5.94499969      0.247450009       17.8349991      0.0 
+pair_coeff 26 46 ljlambda 0.2000000   5.18499994      0.502855480       15.5550003      0.0 
+pair_coeff 27 46 ljlambda 0.2000000   5.45499992      0.379882306       16.3649998      0.0 
+pair_coeff 28 46 ljlambda 0.2000000   5.62500000      0.408260673       16.8750000      0.0 
+pair_coeff 29 46 ljlambda 0.2000000   5.89499998      0.550152779       17.6849995      0.0 
+pair_coeff 30 46 ljlambda 0.2000000   5.59500027      0.559612155       16.7849998      0.0 
+pair_coeff 31 46 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0 
+pair_coeff 32 46 ljlambda 0.2000000   5.67500019      0.427179903       17.0250015      0.0 
+pair_coeff 33 46 ljlambda 0.2000000   6.05500031      0.578531086       18.1650009      0.0 
+pair_coeff 34 46 ljlambda 0.2000000   5.84500027      0.597450018       17.5349998      0.0 
+pair_coeff 35 46 ljlambda 0.2000000   5.25500011      0.455558240       15.7650003      0.0 
+pair_coeff 36 46 ljlambda 0.2000000   5.70499992      0.427179903       17.1149998      0.0 
+pair_coeff 37 46 ljlambda 0.2000000   5.50500011      0.398801178       16.5149994      0.0 
+pair_coeff 38 46 ljlambda 0.2000000   5.44499969      0.597450018       16.3349991      0.0 
+pair_coeff 39 46 ljlambda 0.2000000   5.40499973      0.455558240       16.2150002      0.0 
+pair_coeff 40 46 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0 
+pair_coeff 41 46 ljlambda 0.2000000   6.88499975      0.228550002       20.6549988      0.0
+pair_coeff 42 46 ljlambda 0.2000000   6.77500010      0.238000005       20.3250008      0.0
+pair_coeff 43 46 ljlambda 0.2000000   6.92000008      0.181299999       20.7600002      0.0
+pair_coeff 44 46 ljlambda 0.2000000   6.75000000      0.238000005       20.2500000      0.0
+pair_coeff 45 46 ljlambda 0.2000000   5.50500011      0.398801178       16.5149994      0.0
+pair_coeff 46 46 ljlambda 0.2000000   5.33000000      3.20000          16.0000000      0.0 
+
+pair_coeff 1  47 ljlambda 0.2000000   5.75500011      0.540693283       17.2649994      0.0
+pair_coeff 2  47 ljlambda 0.2000000   4.91499996      0.474477142       14.7449999      0.0
+pair_coeff 3  47 ljlambda 0.2000000   5.84500027      0.427179903       17.5349998      0.0
+pair_coeff 4  47 ljlambda 0.2000000   5.47499990      0.483936608       16.4249992      0.0
+pair_coeff 5  47 ljlambda 0.2000000   5.94499969      0.247450009       17.8349991      0.0
+pair_coeff 6  47 ljlambda 0.2000000   5.18499994      0.502855480       15.5550003      0.0
+pair_coeff 7  47 ljlambda 0.2000000   5.45499992      0.379882306       16.3649998      0.0
+pair_coeff 8  47 ljlambda 0.2000000   5.62500000      0.408260673       16.8750000      0.0
+pair_coeff 9  47 ljlambda 0.2000000   5.89499998      0.550152779       17.6849995      0.0
+pair_coeff 10 47 ljlambda 0.2000000   5.59500027      0.559612155       16.7849998      0.0
+pair_coeff 11 47 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0
+pair_coeff 12 47 ljlambda 0.2000000   5.67500019      0.427179903       17.0250015      0.0
+pair_coeff 13 47 ljlambda 0.2000000   6.05500031      0.578531086       18.1650009      0.0
+pair_coeff 14 47 ljlambda 0.2000000   5.84500027      0.597450018       17.5349998      0.0
+pair_coeff 15 47 ljlambda 0.2000000   5.25500011      0.455558240       15.7650003      0.0
+pair_coeff 16 47 ljlambda 0.2000000   5.70499992      0.427179903       17.1149998      0.0
+pair_coeff 17 47 ljlambda 0.2000000   5.50500011      0.398801178       16.5149994      0.0
+pair_coeff 18 47 ljlambda 0.2000000   5.44499969      0.597450018       16.3349991      0.0
+pair_coeff 19 47 ljlambda 0.2000000   5.40499973      0.455558240       16.2150002      0.0
+pair_coeff 20 47 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0
+pair_coeff 21 47 ljlambda 0.2000000   5.75500011      0.540693283       17.2649994      0.0
+pair_coeff 22 47 ljlambda 0.2000000   4.91499996      0.474477142       14.7449999      0.0
+pair_coeff 23 47 ljlambda 0.2000000   5.84500027      0.427179903       17.5349998      0.0
+pair_coeff 24 47 ljlambda 0.2000000   5.47499990      0.483936608       16.4249992      0.0
+pair_coeff 25 47 ljlambda 0.2000000   5.94499969      0.247450009       17.8349991      0.0
+pair_coeff 26 47 ljlambda 0.2000000   5.18499994      0.502855480       15.5550003      0.0
+pair_coeff 27 47 ljlambda 0.2000000   5.45499992      0.379882306       16.3649998      0.0
+pair_coeff 28 47 ljlambda 0.2000000   5.62500000      0.408260673       16.8750000      0.0
+pair_coeff 29 47 ljlambda 0.2000000   5.89499998      0.550152779       17.6849995      0.0
+pair_coeff 30 47 ljlambda 0.2000000   5.59500027      0.559612155       16.7849998      0.0
+pair_coeff 31 47 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0
+pair_coeff 32 47 ljlambda 0.2000000   5.67500019      0.427179903       17.0250015      0.0
+pair_coeff 33 47 ljlambda 0.2000000   6.05500031      0.578531086       18.1650009      0.0
+pair_coeff 34 47 ljlambda 0.2000000   5.84500027      0.597450018       17.5349998      0.0
+pair_coeff 35 47 ljlambda 0.2000000   5.25500011      0.455558240       15.7650003      0.0
+pair_coeff 36 47 ljlambda 0.2000000   5.70499992      0.427179903       17.1149998      0.0
+pair_coeff 37 47 ljlambda 0.2000000   5.50500011      0.398801178       16.5149994      0.0
+pair_coeff 38 47 ljlambda 0.2000000   5.44499969      0.597450018       16.3349991      0.0
+pair_coeff 39 47 ljlambda 0.2000000   5.40499973      0.455558240       16.2150002      0.0
+pair_coeff 40 47 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0
+pair_coeff 41 47 ljlambda 0.2000000   6.88499975      0.228550002       20.6549988      0.0
+pair_coeff 42 47 ljlambda 0.2000000   6.77500010      0.238000005       20.3250008      0.0
+pair_coeff 43 47 ljlambda  0.2000000  6.92000008      0.181299999       20.7600002      0.0
+pair_coeff 44 47 ljlambda  0.2000000  6.75000000      0.238000005       20.2500000      0.0
+pair_coeff 45 47 ljlambda  0.2000000  5.50500011      0.398801178       16.5149994      0.0
+pair_coeff 46 47 ljlambda  0.2000000  5.33000000      3.200000000       16.0  0.000
+pair_coeff 47 47 ljlambda  0.2000000  5.33000000      3.200000000       16.0  0.000
+
+pair_coeff 1  48 ljlambda 0.2000000   5.75500011      0.540693283       17.2649994      0.0
+pair_coeff 2  48 ljlambda 0.2000000   4.91499996      0.474477142       14.7449999      0.0
+pair_coeff 3  48 ljlambda 0.2000000   5.84500027      0.427179903       17.5349998      0.0
+pair_coeff 4  48 ljlambda 0.2000000   5.47499990      0.483936608       16.4249992      0.0
+pair_coeff 5  48 ljlambda 0.2000000   5.94499969      0.247450009       17.8349991      0.0
+pair_coeff 6  48 ljlambda 0.2000000   5.18499994      0.502855480       15.5550003      0.0
+pair_coeff 7  48 ljlambda 0.2000000   5.45499992      0.379882306       16.3649998      0.0
+pair_coeff 8  48 ljlambda 0.2000000   5.62500000      0.408260673       16.8750000      0.0
+pair_coeff 9  48 ljlambda 0.2000000   5.89499998      0.550152779       17.6849995      0.0
+pair_coeff 10 48 ljlambda 0.2000000   5.59500027      0.559612155       16.7849998      0.0
+pair_coeff 11 48 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0
+pair_coeff 12 48 ljlambda 0.2000000   5.67500019      0.427179903       17.0250015      0.0
+pair_coeff 13 48 ljlambda 0.2000000   6.05500031      0.578531086       18.1650009      0.0
+pair_coeff 14 48 ljlambda 0.2000000   5.84500027      0.597450018       17.5349998      0.0
+pair_coeff 15 48 ljlambda 0.2000000   5.25500011      0.455558240       15.7650003      0.0
+pair_coeff 16 48 ljlambda 0.2000000   5.70499992      0.427179903       17.1149998      0.0
+pair_coeff 17 48 ljlambda 0.2000000   5.50500011      0.398801178       16.5149994      0.0
+pair_coeff 18 48 ljlambda 0.2000000   5.44499969      0.597450018       16.3349991      0.0
+pair_coeff 19 48 ljlambda 0.2000000   5.40499973      0.455558240       16.2150002      0.0
+pair_coeff 20 48 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0
+pair_coeff 21 48 ljlambda 0.2000000   5.75500011      0.540693283       17.2649994      0.0
+pair_coeff 22 48 ljlambda 0.2000000   4.91499996      0.474477142       14.7449999      0.0
+pair_coeff 23 48 ljlambda 0.2000000   5.84500027      0.427179903       17.5349998      0.0
+pair_coeff 24 48 ljlambda 0.2000000   5.47499990      0.483936608       16.4249992      0.0
+pair_coeff 25 48 ljlambda 0.2000000   5.94499969      0.247450009       17.8349991      0.0
+pair_coeff 26 48 ljlambda 0.2000000   5.18499994      0.502855480       15.5550003      0.0
+pair_coeff 27 48 ljlambda 0.2000000   5.45499992      0.379882306       16.3649998      0.0
+pair_coeff 28 48 ljlambda 0.2000000   5.62500000      0.408260673       16.8750000      0.0
+pair_coeff 29 48 ljlambda 0.2000000   5.89499998      0.550152779       17.6849995      0.0
+pair_coeff 30 48 ljlambda 0.2000000   5.59500027      0.559612155       16.7849998      0.0
+pair_coeff 31 48 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0
+pair_coeff 32 48 ljlambda 0.2000000   5.67500019      0.427179903       17.0250015      0.0
+pair_coeff 33 48 ljlambda 0.2000000   6.05500031      0.578531086       18.1650009      0.0
+pair_coeff 34 48 ljlambda 0.2000000   5.84500027      0.597450018       17.5349998      0.0
+pair_coeff 35 48 ljlambda 0.2000000   5.25500011      0.455558240       15.7650003      0.0
+pair_coeff 36 48 ljlambda 0.2000000   5.70499992      0.427179903       17.1149998      0.0
+pair_coeff 37 48 ljlambda 0.2000000   5.50500011      0.398801178       16.5149994      0.0
+pair_coeff 38 48 ljlambda 0.2000000   5.44499969      0.597450018       16.3349991      0.0
+pair_coeff 39 48 ljlambda 0.2000000   5.40499973      0.455558240       16.2150002      0.0
+pair_coeff 40 48 ljlambda 0.2000000   5.75500011      0.587990522       17.2649994      0.0
+pair_coeff 41 48 ljlambda 0.2000000   6.88499975      0.228550002       20.6549988      0.0
+pair_coeff 42 48 ljlambda 0.2000000   6.77500010      0.238000005       20.3250008      0.0
+pair_coeff 43 48 ljlambda  0.2000000  6.92000008      0.181299999       20.7600002      0.0
+pair_coeff 44 48 ljlambda  0.2000000  6.75000000      0.238000005       20.2500000      0.0
+pair_coeff 45 48 ljlambda  0.2000000  5.50500011      0.398801178       16.5149994      0.0
+pair_coeff 46 48 ljlambda  0.2000000  5.33000000      3.200000000       16.0000000      0.0
+pair_coeff 47 48 ljlambda  0.2000000  5.33000000      3.200000000       16.0000000      0.0
+pair_coeff 48 48 ljlambda  0.2000000  5.33000000      3.200000000       21.0000000      0.0
+
+
+
+
+
+
+pair_coeff   *  *  lj/cut  0.0      6.300   10.540  
+pair_coeff  3   9  lj/cut  0.75000  6.410   19.230  
+pair_coeff  3   13 lj/cut  0.75000  6.570   19.710  
+pair_coeff  3   14 lj/cut  0.75000  6.360   19.080  
+pair_coeff  3   29 lj/cut  0.52500  6.410   19.230  
+pair_coeff  3   33 lj/cut  0.52500  6.570   19.710  
+pair_coeff  3   34 lj/cut  0.52500  6.360   19.080  
+pair_coeff  5   9  lj/cut  0.75000  6.510   19.530        
+pair_coeff  5   13 lj/cut  0.75000  6.670   20.010  
+pair_coeff  5   14 lj/cut  0.75000  6.460   19.380  
+pair_coeff  5   29 lj/cut  0.52500  6.510   19.530  
+pair_coeff  5   33 lj/cut  0.52500  6.670   20.010  
+pair_coeff  5   34 lj/cut  0.52500  6.460   19.380  
+pair_coeff  9   23 lj/cut  0.52500  6.410   19.230  
+pair_coeff  9   25 lj/cut  0.52500  6.510   19.530  
+pair_coeff  13  23 lj/cut  0.52500  6.570   19.710  
+pair_coeff  13  25 lj/cut  0.52500  6.670   20.010  
+pair_coeff  14  23 lj/cut  0.52500  6.360   19.080  
+pair_coeff  14  25 lj/cut  0.52500  6.460   19.380  
+pair_coeff  23  29 lj/cut  0.52500  6.410   19.230  
+pair_coeff  23  33 lj/cut  0.52500  6.570   19.710  
+pair_coeff  23  34 lj/cut  0.52500  6.360   19.080  
+pair_coeff  25  29 lj/cut  0.52500  6.510   19.530  
+pair_coeff  25  33 lj/cut  0.52500  6.670   20.010  
+pair_coeff  25  34 lj/cut  0.52500  6.460   19.380  
+
+
+special_bonds fene
+neighbor  3.5 multi
+
+
+neigh_modify  every 10 delay 0
+
+comm_style    tiled
+timestep      10
+
+###########################################################################################################################
+## ===============================================  REACTIONS ALGORITHM  =============================================== ##
+###########################################################################################################################
+
+#REACTION 1
+variable catoff_coord1 equal 10.5
+variable catoff_coord_cross1 equal 10.5
+variable catoff_coordback equal 30
+
+### SET THE ATOM GROUPS FOR EACH REACTION
+variable ccin atom "type == 45"
+group cuarcin dynamic all var ccin every 10
+variable cback atom "type == 48"
+group cuarback dynamic all var cback every 10
+
+############## COMPUTE THE COORDINATION  ###############
+# REACTION 1
+compute 2 cuarcin    coord/atom cutoff ${catoff_coord1} 45
+compute 3 cuarcin    coord/atom cutoff ${catoff_coord_cross1} 47
+compute 4 cuarback   coord/atom cutoff ${catoff_coordback} 48
+
+# REACTION 1
+variable   coordinacion_1a atom "(c_2 > 1)"
+variable   coordinacion_1b atom "((c_3 > 1) && (c_3 < 3) && (type == 45)) || (type==47)"
+variable   coordinacion_1back atom "(c_4 < 2) && (type == 48)"
+group highc1    dynamic all  var coordinacion_1a every 1000
+group highc1_cross    dynamic all  var coordinacion_1b every 10
+group highc1_back    dynamic all  var coordinacion_1back every 10
+variable   p1  equal  "count(highc1)"
+variable   h1  equal  "count(highc1_cross)"
+variable   b1  equal  "count(highc1_back)"
+
+#### Cutoffs for the reaction to occur ####
+# REACTION 1
+variable catoff_pure1 equal 8
+variable catoff_cross1 equal 8
+variable catoff_back1 equal 20
+
+#####  LOAD THE REACTIONS TEMPLATES #####
+# REACTION 1
+molecule mol1a polimer1_pre  
+molecule mol1b polimer1_pre_cross
+molecule mol1fin polimer1_post
+molecule mol1back polimer1_pre_back
+molecule mol1backfin polimer1_post_back
+
+##########   REACTIONS   ##########
+fix 5 all bond/react &
+react myreact1a highc1    10 0 ${catoff_pure1} mol1a mol1fin map1  &
+react myreact1b highc1_cross    10 0 ${catoff_cross1} mol1b mol1fin map1 &
+react myreact1c highc1_back  10 0 ${catoff_back1} mol1back mol1backfin map1back
+###############################################################################################################
+## ======================================= END OF REACTIONS ALGORITHM ====================================== ##
+###############################################################################################################
+
+
+
+
+fix           fxnve   all nve
+fix           fxlange all langevin                     380 380 5000.0 32784
+fix           fxnpt all press/berendsen iso 0 0  5000.0 dilate all
+
+fix           fixcentro all recenter INIT INIT INIT
+fix           fxbal  all balance 1000 1.05 rcb
+
+########################  Radius  #################################
+compute cc1 all chunk/atom molecule
+compute radio all gyration/chunk cc1
+variable media_radio equal ave(c_radio)
+fix ex all print 10000 "${media_radio}" file gyration.out screen no
+fix radio  all ave/time 10000 1 10000 c_radio[*] file radio.out mode vector
+###################################################################
+
+##########################  Density  ################################
+compute densidad all chunk/atom bin/1d x lower 1
+fix 3 all ave/chunk 100000 1 100000 densidad density/mass file density.profile
+####################################################################
+
+dump          1 all custom 50000 result.lammpstrj id mol type q x y z 
+dump_modify   1 sort id
+
+thermo        1000
+thermo_style  custom step pe epair eangle ebond press ke temp lx ly lz pxx pyy pzz  spcpu density f_5[1] f_5[2] f_5[3] v_p1 v_h1 v_b1 
+thermo_modify flush yes
+
+restart       100000 restart1.tmp restart2.tmp
+run           200000000
