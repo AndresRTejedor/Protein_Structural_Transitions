@@ -1,0 +1,26 @@
+This LAMMPS simulation made specific use of work described in the
+following references.  See http://lammps.sandia.gov/cite.html
+for details.
+
+neighbor multi command:
+
+@Article{Intveld08,
+ author =  {P.{\,}J.~in{\,}'t~Veld and S.{\,}J.~Plimpton and G.{\,}S.~Grest},
+ title =   {Accurate and Efficient Methods for Modeling Colloidal
+            Mixtures in an Explicit Solvent using Molecular Dynamics},
+ journal = {Comp.~Phys.~Comm.},
+ year =    2008,
+ volume =  179,
+ pages =   {320--329}
+}
+
+fix ave/correlate/long command:
+
+@Article{Ramirez10,
+ author = {Jorge Rami{'}rez and Sathish K. Sukumaran and Bart Vorselaars and Alexei E. Likhtman},
+ title =   {Efficient on the fly calculation of time correlation functions in computer simulations}, journal = {J.~Chem.~Phys.},
+ year =    2010,
+ volume =  133,
+ pages =   {154103}
+}
+
