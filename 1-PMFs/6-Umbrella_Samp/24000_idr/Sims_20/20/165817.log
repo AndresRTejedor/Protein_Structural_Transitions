@@ -1,0 +1,91 @@
+Changed directory to /media/beegfs/home/t731/t731630/ANDRES/hnRNPA1/PMFs/umbrella_shawn/24000_idr/20.
+
+JobID: 165817
+======
+Time: mar jul  6 12:40:47 UTC 2021
+Running on master node: r1n27.hpc.lan
+Current directory: /media/beegfs/home/t731/t731630/ANDRES/hnRNPA1/PMFs/umbrella_shawn/24000_idr/20
+/var/spool/slurm/d/job165817/slurm_script: línea 128: generate_pbs_nodefile: no se encontró la orden
+
+Nodes allocated:
+================
+
+
+numtasks=32, numnodes=1, mpi_tasks_per_node=32 (OMP_NUM_THREADS=1)
+
+Executing command:
+==================
+
+
+                      :-) GROMACS - gmx mdrun, 2018.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.2
+Executable:   /sw/software/GROMACS/2018.2-foss-2018b/bin/gmx_mpi
+Data prefix:  /sw/software/GROMACS/2018.2-foss-2018b
+Working dir:  /media/beegfs/home/t731/t731630/ANDRES/hnRNPA1/PMFs/umbrella_shawn/24000_idr/20
+Command line:
+  gmx_mpi mdrun -deffnm umbrella20
+
+Reading file umbrella20.tpr, VERSION 2018.2 (single precision)
+Changing nstlist from 20 to 100, rlist from 1.404 to 1.514
+
+
+Will use 24 particle-particle and 8 PME only ranks
+This is a guess, check the performance at the end of the log file
+Using 32 MPI processes
+Using 1 OpenMP thread per MPI process
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+starting mdrun 'Green Red Orange Magenta Azure Cyan Skyblue in water'
+50000000 steps,  50000.0 ps.
+
+Writing final coordinates.
+
+ Dynamic load balancing report:
+ DLB was off during the run due to low measured imbalance.
+ Average load imbalance: 0.4%.
+ The balanceable part of the MD step is 90%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.3%.
+ Average PME mesh/force load: 0.400
+ Part of the total run time spent waiting due to PP/PME imbalance: 13.3 %
+
+NOTE: 13.3 % performance was lost because the PME ranks
+      had less work to do than the PP ranks.
+      You might want to decrease the number of PME ranks
+      or decrease the cut-off and the grid spacing.
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:  4610910.890   144090.965     3200.0
+                         1d16h01:30
+                 (ns/day)    (hour/ns)
+Performance:       29.981        0.801
+
+GROMACS reminds you: "I'm no model lady. A model's just an imitation of the real thing." (Mae West)
+
